@@ -1,9 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.google.com/specimen/Comfortaa");
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../public/fonts/Comfortaa-Regular.ttf");
+}
+:root {
+  --special_text: #ff4d4d;
+  --button_color: #111;
+  --main_color: #dcdcdc;
+  --text_color: #2d2d34;
+  --inner_color: #fff;
+  --background_color: #fff;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Comfortaa;
 }
 
 a {
@@ -13,14 +30,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
