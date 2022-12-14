@@ -3,6 +3,7 @@ import styles from "../styles/feature_1.module.css";
 import check from "../public/icons/Check-mark.svg";
 import Image from "next/image";
 import next_arrow from "../public/icons/next_arrow.svg";
+import feature from "../public/img/feature_1.png";
 
 export default function Features_1() {
   return (
@@ -13,7 +14,7 @@ export default function Features_1() {
       </div>
       <div className={styles.small_con}>
         <div className={styles.left}>
-          <h3 className={styles.name_of_feature}>УХААЛАГ QR ЦЭС</h3>
+          <h4 className={styles.name_of_feature}>УХААЛАГ QR ЦЭС</h4>
           <h1 className={styles.title_of_feature}>Захиалга хийх шинэ арга</h1>
           <p className={styles.description_of_feature}>
             Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх
@@ -44,7 +45,9 @@ export default function Features_1() {
             <Image alt="down" src={next_arrow} />
           </button>
         </div>
-        <div className={styles.rigth}>sss</div>
+        <div className={styles.rigth}>
+          <Image className={styles.feature_img} alt="feature_1" src={feature} />
+        </div>
       </div>
     </div>
   );

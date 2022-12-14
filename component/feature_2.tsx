@@ -3,13 +3,17 @@ import styles from "../styles/feature_2.module.css";
 import Image from "next/image";
 import check from "../public/icons/Check-mark.svg";
 import right_arrow from "../public/icons/right_arrow.svg";
+import feature from "../public/img/feature_2.png";
 
 export default function Feature_2() {
   return (
     <div className={styles.small_con}>
-      <div className={styles.rigth}>sss</div>
+      <div className={styles.rigth}>
+        {" "}
+        <Image className={styles.feature_img} alt="feature_2" src={feature} />
+      </div>
       <div className={styles.left}>
-        <h3 className={styles.name_of_feature}>КАССЫН СИСТЕМ</h3>
+        <h4 className={styles.name_of_feature}>КАССЫН СИСТЕМ</h4>
         <h1 className={styles.title_of_feature}>
           Захиалгыг боловсруулах систем
         </h1>

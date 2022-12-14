@@ -7,6 +7,14 @@
 @font-face {
   font-family: "Comfortaa";
   src: url("../public/fonts/Comfortaa-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../public/fonts/Comfortaa-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 :root {
   --special_text: #ff4d4d;
@@ -20,7 +28,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Comfortaa;
 }
 
 a {
@@ -30,4 +37,30 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--text_color);
+}
+h3 {
+  font-size: 2rem;
+  color: var(--special_text);
+}
+@media screen and (max-width: 1050px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
 }

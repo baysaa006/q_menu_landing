@@ -9,10 +9,6 @@
   border-bottom: 1px solid var(--main_color);
 }
 
-.nav {
-  width: 100%;
-  position: fixed;
-}
 .drop_down {
   gap: 2rem;
   display: flex;
@@ -75,6 +71,7 @@
   border: 1px solid var(--text_color);
   border-radius: 2rem;
 }
+
 .menu {
   display: none;
 }

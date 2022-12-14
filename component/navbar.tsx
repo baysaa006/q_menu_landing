@@ -16,27 +16,25 @@ export default function Navbar() {
       <div className={styles.navs}>
         <ul className={styles.drop_down}>
           <li className={styles.drop_down_feuture}>
-            <a href="" className={styles.drop_down_icon}>
-              Бүтээгдэхүүн
-            </a>
+            <a href="#feature_1">Бүтээгдэхүүн</a>
             <Image alt="down" src={down_arrow} />
             <ul className={styles.drop_down_items}>
               <li className={styles.item}>
-                <a href="">Ухаалаг Qr цэс</a>
+                <a href="#feature_1">Ухаалаг Qr цэс</a>
               </li>
               <li className={styles.item}>
-                <a href="">Кассын систем</a>
+                <a href="#feature_2">Кассын систем</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="" className={styles.drop_down_item}>
+            <a href="#pricing" className={styles.drop_down_item}>
               Үнийн санал
             </a>
           </li>
           <li>
-            <a href="" className={styles.drop_down_item}>
+            <a href="#contact" className={styles.drop_down_item}>
               Холбоо барих
             </a>
           </li>
