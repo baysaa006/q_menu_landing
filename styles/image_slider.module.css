@@ -5,6 +5,7 @@
   font-style: normal;
 }
 .wrapper {
+  transition: opacity 500ms ease 0s, visibility 500ms ease 0s;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -90,7 +91,6 @@
   cursor: pointer;
 }
 .images {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
   height: 80vh;
   object-fit: cover;
 }

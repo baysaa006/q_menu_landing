@@ -9,6 +9,7 @@ const Slider = ({
   imageList,
   width,
   height,
+
   loop = true,
   autoPlay = true,
   autoPlayInterval = 3000,

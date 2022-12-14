@@ -74,13 +74,13 @@ export default function Navbar() {
       {isNavExpanded && (
         <ul className={styles.expanded_menu_items}>
           <li>
-            <a href="/home">Бүтээгдэхүүн</a>
+            <a href="#feature_1">Бүтээгдэхүүн</a>
           </li>
           <li>
-            <a href="/about"> Үнийн санал</a>
+            <a href="#pricing"> Үнийн санал</a>
           </li>
           <li>
-            <a href="/contact">Холбоо барих</a>
+            <a href="#contact">Холбоо барих</a>
           </li>
         </ul>
       )}
