@@ -93,71 +93,91 @@
 }
 @media screen and (max-width: 865px) {
   .hero_text {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .container {
-    height: 125vh;
+    height: 160vh;
   }
+
   .right_con {
+    gap: 1rem;
     width: 100%;
   }
   .corner {
     align-items: center;
+    gap: 1rem;
     flex-direction: column;
   }
   .left_con {
-    width: 50%;
+    width: 80%;
   }
   .register_button {
-    width: 50%;
+    width: 40%;
     margin-top: 1rem;
     font-size: 13px;
   }
 }
 @media screen and (max-width: 747px) {
   .left_con {
-    width: 60%;
+    width: 70%;
+  }
+  .container {
+    height: 150vh;
   }
   .register_button {
     width: 50%;
   }
   .corner {
     position: relative;
-    align-items: center;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 694px) {
-  .register_button {
-    width: 40%;
-  }
-}
+
 @media screen and (max-width: 600px) {
-  .corner {
-    justify-content: center;
-  }
   .hero_text {
-    font-size: xx-large;
+    font-size: 2.3rem;
   }
   .register_button {
-    font-size: 8px;
+    font-size: 10px;
     width: 40%;
   }
-}
-@media screen and (max-width: 540px) {
   .container {
-    padding-top: 4rem;
+    height: 135vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
     height: 100vh;
   }
-}
-@media screen and (max-width: 414px) {
   .hero_text {
-    font-size: x-large;
+    font-size: 2.2rem;
   }
   .corner {
-    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+  .left_con {
+    width: 80%;
   }
   .register_button {
     width: 50%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .register_button {
+    font-size: 10px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 378px) {
+  .container {
+    height: 105vh;
+  }
+  .register_button {
+    font-size: 9px;
+    width: 50%;
+  }
+  .hero_text {
+    font-size: 2rem;
   }
 }

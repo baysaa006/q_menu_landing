@@ -73,7 +73,7 @@ export default function Navbar() {
         </div>
       )}
 
-      {!isNavExpanded && (
+      {isNavExpanded && (
         <ul className={styles.expanded_menu_items}>
           <li>
             <a href="/home">Бүтээгдэхүүн</a>
