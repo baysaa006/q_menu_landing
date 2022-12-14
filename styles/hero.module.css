@@ -66,11 +66,13 @@
   gap: 1em;
   word-spacing: 5px;
   display: flex;
+  padding-top: 10px;
 }
 .slugins ul {
+  justify-content: center;
+
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 @-webkit-keyframes register {
   from {

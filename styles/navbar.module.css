@@ -45,7 +45,6 @@
 }
 .buttons {
   display: flex;
-  gap: 2rem;
 }
 .button_sign_in:hover {
   background-color: var(--button_color);
@@ -65,6 +64,7 @@
   color: var(--button_color);
 }
 .button_sign_up {
+  margin-left: 10px;
   background-color: var(--button_color);
   color: var(--inner_color);
   font-size: 16px;
