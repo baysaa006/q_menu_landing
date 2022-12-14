@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": "./types"
   },
-  "files": ["tests.ts"],
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",
