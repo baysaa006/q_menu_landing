@@ -9,7 +9,7 @@ export default function Comment() {
         <h1>Харигцагчид бидний талаар</h1>
       </div>
       <div className={styles.main}>
-        <Comments_card
+        {/* <Comments_card
           title={"Гайхалтай шийдэл"}
           name={"GAN"}
           description={""}
@@ -32,7 +32,7 @@ export default function Comment() {
           name={"GAN"}
           description={""}
           photo={""}
-        />
+        /> */}
       </div>
     </div>
   );

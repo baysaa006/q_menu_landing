@@ -55,9 +55,7 @@ export default function Home() {
       <div id="contact" className={styles.contact}>
         <Contact />
       </div>
-      <div id="footer" className={styles.footer}>
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
