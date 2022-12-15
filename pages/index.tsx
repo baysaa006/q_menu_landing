@@ -12,6 +12,10 @@ import main4 from "../public/img/main4.jpg";
 import Dashboard from "../component/dashboard";
 import Pricing from "../component/pricing/pricing";
 import { useState } from "react";
+import Partners from "../component/partners";
+import Comment from "../component/comments/comment";
+import Contact from "../component/contact";
+import Footer from "../component/footer";
 export default function Home() {
   const images = [main1, main2, main3, main4];
   const [active, setActive] = useState("#");
@@ -41,6 +45,18 @@ export default function Home() {
       </div>
       <div id="pricing" className={styles.pricing}>
         <Pricing />
+      </div>
+      <div id="partners" className={styles.partners}>
+        <Partners />
+      </div>
+      <div id="comment" className={styles.commment}>
+        <Comment />
+      </div>
+      <div id="contact" className={styles.contact}>
+        <Contact />
+      </div>
+      <div id="footer" className={styles.footer}>
+        <Footer />
       </div>
     </>
   );

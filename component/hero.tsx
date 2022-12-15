@@ -19,7 +19,10 @@ export default function Hero() {
           </div>
           <div className={styles.slugins}>
             {" "}
-            <h3>Зайнаас захиалъя, төлье</h3>
+            <h1 className={styles.slugin_text}>
+              Зайнаас захиалъя,
+              <br /> төлье
+            </h1>
             <ul>
               <li>
                 {" "}

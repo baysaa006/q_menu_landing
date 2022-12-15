@@ -1,10 +1,8 @@
 import React from "react";
-import styles from "../styles/feature_1.module.css";
+import styles from "../styles/dashboard.module.css";
 import dash1 from "../public/icons/dash1.svg";
 import dash2 from "../public/icons/dash2.svg";
-
 import dash3 from "../public/icons/dash3.svg";
-
 import Image from "next/image";
 import next_arrow from "../public/icons/next_arrow.svg";
 import dash from "../public/img/dash.png";
@@ -20,7 +18,7 @@ export default function Dashboard() {
         <div className={styles.left}>
           <div className={styles.row}>
             {" "}
-            <Image alt="dash" src={dash1} />
+            <Image className={styles.img} alt="dash" src={dash1} />
             <h4>Ресторан доторх захиалга</h4>
           </div>
           <div className={styles.row}>

@@ -38,29 +38,46 @@ a {
 * {
   box-sizing: border-box;
 }
-
+p {
+  font-size: 1.5vw;
+}
+h4 {
+  font-size: 1.5vw;
+}
 h1 {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3vw;
   color: var(--text_color);
 }
 h3 {
-  font-size: 2rem;
+  font-size: 4vw;
   color: var(--special_text);
 }
 @media screen and (max-width: 1050px) {
+  h4 {
+    font-size: 1.8vw;
+  }
+  p {
+    font-size: 1.8vw;
+  }
   h1 {
-    font-size: 2.2rem;
+    font-size: 4vw;
   }
   h3 {
-    font-size: 1.8rem;
+    font-size: 5vw;
   }
 }
 @media screen and (max-width: 500px) {
-  h1 {
-    font-size: 1.8rem;
-  }
   h3 {
-    font-size: 1.4rem;
+    font-size: 7vw;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 3.3vw;
+  }
+  h4 {
+    font-size: 3.3vw;
   }
 }

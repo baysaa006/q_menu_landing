@@ -3,7 +3,6 @@ import styles from "../styles/navbar.module.css";
 import Image from "next/image";
 import logo from "../public/img/logo_with_slugin.png";
 import down_arrow from "../public/icons/down_arrow.svg";
-import { NextPage } from "next";
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -16,33 +15,43 @@ export default function Navbar() {
       <div className={styles.navs}>
         <ul className={styles.drop_down}>
           <li className={styles.drop_down_feuture}>
-            <a href="#feature_1">Бүтээгдэхүүн</a>
+            <a href="#feature_1">
+              <h4>Бүтээгдэхүүн</h4>
+            </a>
             <Image alt="down" src={down_arrow} />
             <ul className={styles.drop_down_items}>
               <li className={styles.item}>
-                <a href="#feature_1">Ухаалаг Qr цэс</a>
+                <a href="#feature_1">
+                  <h4>Ухаалаг Qr цэс</h4>
+                </a>
               </li>
               <li className={styles.item}>
-                <a href="#feature_2">Кассын систем</a>
+                <a href="#feature_2">
+                  <h4>Кассын систем</h4>
+                </a>
               </li>
             </ul>
           </li>
 
           <li>
             <a href="#pricing" className={styles.drop_down_item}>
-              Үнийн санал
+              <h4> Үнийн санал</h4>
             </a>
           </li>
           <li>
             <a href="#contact" className={styles.drop_down_item}>
-              Холбоо барих
+              <h4> Холбоо барих</h4>
             </a>
           </li>
         </ul>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.button_sign_in}>Нэвтрэх</button>
-        <button className={styles.button_sign_up}>Бүртгүүлэх</button>
+        <button className={styles.button_sign_in}>
+          <h4>Нэвтрэх</h4>
+        </button>
+        <button className={styles.button_sign_up}>
+          <h4>Бүртгүүлэх</h4>
+        </button>
       </div>
       <svg
         className={styles.menu}
@@ -59,13 +68,19 @@ export default function Navbar() {
         <div className={styles.expanded_menu}>
           <ul>
             <li>
-              <a href="#feature_1">Бүтээгдэхүүн</a>
+              <a href="#feature_1">
+                <h4>Бүтээгдэхүүн</h4>
+              </a>
             </li>
             <li>
-              <a href="#pricing">Үнийн санал</a>
+              <a href="#pricing">
+                <h4>Үнийн санал</h4>
+              </a>
             </li>
             <li>
-              <a href="#contact">Холбоо барих</a>
+              <a href="#contact">
+                <h4>Холбоо барих</h4>
+              </a>
             </li>
           </ul>
         </div>
@@ -74,13 +89,21 @@ export default function Navbar() {
       {isNavExpanded && (
         <ul className={styles.expanded_menu_items}>
           <li>
-            <a href="#feature_1">Бүтээгдэхүүн</a>
+            <a href="#feature_1">
+              <h4>Бүтээгдэхүүн</h4>
+            </a>
           </li>
           <li>
-            <a href="#pricing"> Үнийн санал</a>
+            <a href="#pricing">
+              {" "}
+              <h4>Үнийн санал</h4>
+            </a>
           </li>
           <li>
-            <a href="#contact">Холбоо барих</a>
+            <a href="#contact">
+              {" "}
+              <h4>Холбоо барих</h4>
+            </a>
           </li>
         </ul>
       )}
