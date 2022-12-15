@@ -5,7 +5,7 @@ import logo from "../public/img/logo.png";
 import phone from "../public/icons/phone.svg";
 import email from "../public/icons/email.svg";
 import map from "../public/icons/map.svg";
-import link from "../public/icons/Linkedin.svg";
+import link from "../public/icons/linkedin.svg";
 import face from "../public/icons/facebook.svg";
 import insta from "../public/icons/Twitter.svg";
 
