@@ -16,8 +16,7 @@ export default function Footer() {
         <div className={styles.row}>
           <Image className={styles.logo} src={logo} alt="logo" />
           <h4 className={styles.ps}>
-            Our dashboard is desperately waiting for you to test it and bring
-            you new touch to the way you are working with data
+            Our dashboard is desperately waiting for you
           </h4>
         </div>
         <div className={styles.row}>

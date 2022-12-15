@@ -19,7 +19,6 @@ import Footer from "../component/footer";
 export default function Home() {
   const images = [main1, main2, main3, main4];
   const [active, setActive] = useState("#");
-
   return (
     <>
       <div id="navbar" className={styles.nav}>

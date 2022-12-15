@@ -23,7 +23,13 @@
   --text_color: #2d2d34;
   --inner_color: #fff;
   --background_color: #fff;
+  --no-of-slides: 2;
+  --slides-in-view: 3;
+  --slide-width: 400px;
+  --slide-height: 380px;
+  --iteration-time: 6s;
 }
+
 html,
 body {
   padding: 0;
@@ -68,6 +74,10 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
+  :root {
+    --slide-width: 300px;
+    --slide-height: 300px;
+  }
   h3 {
     font-size: 7vw;
   }
