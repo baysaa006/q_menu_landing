@@ -7,9 +7,6 @@ import nextButton from "../public/icons/next_arrow.svg";
 
 const Slider = ({
   imageList,
-  width,
-  height,
-
   loop = true,
   autoPlay = true,
   autoPlayInterval = 3000,

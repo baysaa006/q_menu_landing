@@ -7,7 +7,7 @@ interface data {
   name: string;
 
   description: string;
-  photo: string;
+  photo: any;
 }
 export default function Comments_card(props: data) {
   const { title, name, description, photo, ...other } = props;
@@ -26,7 +26,7 @@ export default function Comments_card(props: data) {
       </div>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,</p>
       <div className={styles.main}>
-        <Image src={photo} alt={"partner"} />
+        <Image className={styles.img} src={photo} alt={"partner"} />
         <h4>{name}</h4>
       </div>
     </div>

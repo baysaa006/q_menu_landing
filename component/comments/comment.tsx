@@ -1,6 +1,18 @@
 import React from "react";
 import Comments_card from "./comments_card";
 import styles from "../../styles/comment/comment.module.css";
+import partner1 from "../../public/img/partners1.jpg";
+import partner2 from "../public/img/partners2.jpg";
+
+import partner3 from "../public/img/partners3.jpg";
+
+import partner4 from "../public/img/partners4.jpg";
+
+import partner5 from "../public/img/partners5.jpg";
+
+import partner6 from "../public/img/partners6.jpg";
+
+import partner7 from "../public/img/partners7.jpg";
 export default function Comment() {
   return (
     <section className={styles.carousel}>
@@ -18,7 +30,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -30,7 +42,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -42,7 +54,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -54,7 +66,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -66,7 +78,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -77,7 +89,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -88,7 +100,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>
@@ -99,7 +111,7 @@ export default function Comment() {
                     title={"Гайхалтай шийдэл"}
                     name={"GAN"}
                     description={""}
-                    photo={""}
+                    photo={partner1}
                   />{" "}
                 </div>
               </div>

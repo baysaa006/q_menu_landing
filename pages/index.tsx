@@ -11,21 +11,22 @@ import main3 from "../public/img/main3.jpg";
 import main4 from "../public/img/main4.jpg";
 import Dashboard from "../component/dashboard";
 import Pricing from "../component/pricing/pricing";
-import { useState } from "react";
 import Partners from "../component/partners";
 import Comment from "../component/comments/comment";
-import Contact from "../component/contact";
+import Contact from "../component/contact/contact";
 import Footer from "../component/footer";
+import Head from "next/head";
 export default function Home() {
   const images = [main1, main2, main3, main4];
-  const [active, setActive] = useState("#");
   return (
     <>
-      <div id="navbar" className={styles.nav}>
-        <Navbar />
-      </div>
+      <Head>
+        <title>Qmenu</title>
+        <link rel="icon " href="../logo.ico" />
+      </Head>
+
       <div className={styles.slider}>
-        <Slider imageList={images} height={undefined} width={undefined} />
+        <Slider imageList={images} />
       </div>
       <div className={styles.hero}>
         <Hero />
@@ -51,10 +52,9 @@ export default function Home() {
       <div id="comment" className={styles.commment}>
         <Comment />
       </div>
-      <div id="contact" className={styles.contact}>
+      <div id="contact">
         <Contact />
       </div>
-      <Footer />
     </>
   );
 }

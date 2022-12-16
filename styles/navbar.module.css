@@ -62,7 +62,6 @@
   margin-left: 10px;
   background-color: var(--button_color);
   color: var(--inner_color);
-
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   padding-right: 1rem;
@@ -80,31 +79,30 @@
   justify-content: space-around;
   display: flex;
 }
-.expanded_menu {
-  display: none;
-}
+
 .expanded_menu_items {
   z-index: 50;
   display: none;
 }
 
 @media screen and (max-width: 850px) {
-  .expanded_menu_items ul li {
-    border-bottom: 1px solid var(--main_color);
+  .expanded_menu_items li {
+    padding: 1rem;
+    width: 80%;
+    border-bottom: 1px solid var(--button_color);
   }
+
   .expanded_menu_items {
-    box-shadow: 1px 1px 5px 1px #000;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    padding: 1em;
-    right: 0;
+    padding: 1rem;
     background-color: var(--main_color);
     width: 100%;
     position: absolute;
-    top: 3rem;
+    top: 4rem;
   }
   .navigation-menu {
     position: absolute;
@@ -114,16 +112,27 @@
     display: none;
   }
 
-  .nav {
-    position: absolute;
-  }
   .menu {
     display: block;
   }
 }
 @media screen and (max-width: 500px) {
   .menu {
+    animation: slide 1s normal ease-in;
     margin-left: 5px;
     width: 20px;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .expanded_menu_items {
+    top: 3.3rem;
   }
 }
