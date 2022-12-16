@@ -16,7 +16,9 @@
   height: 65px;
   width: 65px;
 }
-
+.p {
+  font-size: 16px;
+}
 .row {
   display: flex;
   height: 100%;
@@ -54,6 +56,11 @@
   width: 60px;
   height: 60px;
 }
+@media screen and (max-width: 835px) {
+  .p {
+    font-size: 12px;
+  }
+}
 @media screen and (max-wdith: 695px) {
   .direct {
     height: 20px;
@@ -73,12 +80,17 @@
     display: none;
   }
   .container {
-    height: 62vh;
+    height: 40vh;
   }
   .ps {
     display: none;
   }
   .p {
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .container {
+    height: 53vh;
   }
 }
