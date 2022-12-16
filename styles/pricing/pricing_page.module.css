@@ -12,3 +12,21 @@
   flex-direction: column;
   align-items: center;
 }
+.pricing_desktop {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  display: block;
+}
+.pricing_phone {
+  width: 100%;
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .pricing_desktop {
+    display: none;
+  }
+  .pricing_phone {
+    display: block;
+  }
+}
