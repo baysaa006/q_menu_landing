@@ -20,7 +20,7 @@
 .row {
   display: flex;
   height: 100%;
-  gap: 2rem;
+  gap: 32px;
   padding-left: 1rem;
   flex-direction: column;
   width: 33%;
@@ -36,12 +36,12 @@
   border-top: 1px solid var(--main_color);
   height: 20%;
 }
-.social_logo {
+.direct {
   width: 25px;
   height: 25px;
 }
 .connect {
-  gap: 0.5rem;
+  gap: 8px;
   display: flex;
   justify-content: flex-start;
 }
@@ -50,14 +50,22 @@
   width: 30%;
   justify-content: space-between;
 }
+.social_logo {
+  width: 60px;
+  height: 60px;
+}
 @media screen and (max-wdith: 695px) {
-  .social_logo {
+  .direct {
     height: 20px;
     width: 20px;
   }
+  .social_logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (max-width: 500px) {
-  .social_logo {
+  .direct {
     width: 15px;
     height: 15px;
   }

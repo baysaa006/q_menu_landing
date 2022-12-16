@@ -45,12 +45,12 @@ export default function Footer() {
             <h4 className={styles.p}>Бидэнтэй холбогдох</h4>
           </a>
           <a className={styles.connect} href="tel:+77772040">
-            <Image className={styles.social_logo} src={phone} alt="" />
+            <Image className={styles.direct} src={phone} alt="" />
             <h4 className={styles.p}> 77772040</h4>
           </a>
           <a className={styles.connect} href="#contact">
             {" "}
-            <Image className={styles.social_logo} src={email} alt="" />
+            <Image className={styles.direct} src={email} alt="" />
             <h4 className={styles.p}> info@qmenu.mn</h4>
           </a>
           <a
@@ -59,7 +59,7 @@ export default function Footer() {
             target="_blank"
           >
             {" "}
-            <Image className={styles.social_logo} src={map} alt="" />
+            <Image className={styles.direct} src={map} alt="" />
             <h4 className={styles.p}>
               Рояал плаза барилга,БЗД, 26-р хороо, <br />
               Улаанбаатар хот, Монгол улс.
@@ -71,17 +71,17 @@ export default function Footer() {
         <ul className={styles.social}>
           <li>
             <a href="https://www.facebook.com/QmenuDigitalMenu" target="_blank">
-              <Image src={face} alt="" />
+              <Image className={styles.social_logo} src={face} alt="" />
             </a>
           </li>
           <li>
             <a href="">
-              <Image src={insta} alt="" />
+              <Image className={styles.social_logo} src={insta} alt="" />
             </a>
           </li>
           <li>
             <a href="">
-              <Image src={link} alt="" />
+              <Image className={styles.social_logo} src={link} alt="" />
             </a>
           </li>
         </ul>

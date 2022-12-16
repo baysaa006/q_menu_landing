@@ -44,11 +44,9 @@
   border-radius: 2rem;
   background-color: var(--button_color);
   color: var(--inner_color);
+  margin-top: 16px;
 }
-.register {
-  animation: register;
-  animation: 1s ease-in-out infinite alternate;
-}
+
 .register_button:hover {
   background-color: var(--inner_color);
   color: var(--button_color);
@@ -100,7 +98,7 @@
   }
 
   .right_con {
-    gap: 15px;
+    gap: 16px;
     width: 100%;
   }
   .corner {
