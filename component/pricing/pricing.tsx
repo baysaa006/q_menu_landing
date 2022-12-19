@@ -22,19 +22,19 @@ export default function Pricing() {
             onClick={() => setActive(2)}
             className={active === 2 ? styles.switcher_on : styles.switcher_off}
           >
-            Улиралаар
+            Улирал
           </button>
           <button
             onClick={() => setActive(3)}
             className={active === 3 ? styles.switcher_on : styles.switcher_off}
           >
-            Хагас жилээр
+            Хагас жил
           </button>
           <button
             onClick={() => setActive(4)}
             className={active === 4 ? styles.switcher_on : styles.switcher_off}
           >
-            Жилээр
+            Жил
           </button>
         </div>
       </div>

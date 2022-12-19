@@ -15,7 +15,7 @@
 :root {
   --special_text: #ff4d4d;
   --button_color: #111;
-  --main_color: #dcdcdc;
+  --main_color: #f6f6f6;
   --text_color: #2d2d34;
   --inner_color: #fff;
   --background_color: #fff;
@@ -81,7 +81,7 @@ h3 {
     font-size: 6vw;
   }
   p {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
   }
   h4 {
     font-size: 3.3vw;

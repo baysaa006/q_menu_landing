@@ -1,4 +1,3 @@
-import Navbar from "../component/navbar";
 import Hero from "../component/hero";
 import styles from "../styles/Home.module.css";
 import Features_2 from "../component/feature_2";
@@ -14,15 +13,21 @@ import Pricing from "../component/pricing/pricing";
 import Partners from "../component/partners";
 import Comment from "../component/comments/comment";
 import Contact from "../component/contact/contact";
-import Footer from "../component/footer";
 import Head from "next/head";
 export default function Home() {
   const images = [main1, main2, main3, main4];
   return (
     <>
       <Head>
-        <title>Qmenu</title>
+        <title>Рестораны цогц систем - Qmenu -Зайнаас захиалъя, төлье </title>
         <link rel="icon " href="../logo.ico" />
+        <link rel="canonical" hrefLang="mn" href="https://qmenu.mn" />
+        <meta name="robots" content="qmenu.mn" />
+        <meta name="geo.placename" content="Mongolia"></meta>
+        <meta
+          name="description"
+          content="Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс юм."
+        ></meta>
       </Head>
 
       <div className={styles.slider}>

@@ -20,30 +20,22 @@ export default function Footer() {
           </h4>
         </div>
         <div className={styles.row}>
-          <a className={styles.title}>
-            <h4 className={styles.p}>Бүтээгдэхүүн</h4>
-          </a>
+          <h4 className={styles.p}>Бүтээгдэхүүн</h4>
+
           <a href="#feature_1">
-            <h4 className={styles.p}>УХААЛАГ QR ЦЭС</h4>
+            <h4 className={styles.p}>Ухаалаг QR цэс</h4>
           </a>
           <a href="#feature_2">
-            <h4 className={styles.p}>КАССЫН СИСТЕМ</h4>
+            <h4 className={styles.p}>Кассын систем</h4>
           </a>
           <a href="#features">
-            <h4 className={styles.p}>НЭМЭЛТ ШИЙДЭЛҮҮД</h4>
+            <h4 className={styles.p}>Нэмэлт шийдэлүүд</h4>
           </a>
         </div>
+
         <div className={styles.row}>
           {" "}
-          <a className={styles.title}>
-            <h4 className={styles.p}>Бидний талаар</h4>
-          </a>
-        </div>
-        <div className={styles.row}>
-          {" "}
-          <a className={styles.title}>
-            <h4 className={styles.p}>Бидэнтэй холбогдох</h4>
-          </a>
+          <h4 className={styles.p}>Бидэнтэй холбогдох</h4>
           <a className={styles.connect} href="tel:+77772040">
             <Image className={styles.direct} src={phone} alt="" />
             <h4 className={styles.p}> 77772040</h4>
@@ -70,19 +62,19 @@ export default function Footer() {
       <div className={styles.side}>
         <ul className={styles.social}>
           <li>
-            <a href="https://www.facebook.com/QmenuDigitalMenu" target="_blank">
+            <a
+              aria-label="Read more about QmenuDigitalMenu "
+              href="https://www.facebook.com/QmenuDigitalMenu"
+              target="_blank"
+            >
               <Image className={styles.social_logo} src={face} alt="" />
             </a>
           </li>
           <li>
-            <a href="">
-              <Image className={styles.social_logo} src={insta} alt="" />
-            </a>
+            <Image className={styles.social_logo} src={insta} alt="" />
           </li>
           <li>
-            <a href="">
-              <Image className={styles.social_logo} src={link} alt="" />
-            </a>
+            <Image className={styles.social_logo} src={link} alt="" />
           </li>
         </ul>
       </div>

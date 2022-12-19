@@ -89,6 +89,7 @@ export default function Contact() {
           {sent && <Contact_sent />}
           <input
             disabled
+            aria-label="send"
             onClick={send}
             value="Илгээх"
             className={styles.button}

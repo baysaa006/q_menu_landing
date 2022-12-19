@@ -86,12 +86,9 @@
   .ps {
     display: none;
   }
-  .p {
-    font-size: 8px;
-  }
 }
 @media screen and (max-width: 376px) {
   .container {
-    height: 53vh;
+    height: 62vh;
   }
 }

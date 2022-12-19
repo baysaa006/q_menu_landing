@@ -18,7 +18,7 @@ export default function Features() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
           </p>
-          <a className={styles.more} href="">
+          <a className={styles.more} href="/features">
             {" "}
             Дэлгэрэнгүй...
           </a>
@@ -31,7 +31,7 @@ export default function Features() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
           </p>
-          <a className={styles.more} href="">
+          <a className={styles.more} href="/features">
             {" "}
             Дэлгэрэнгүй...
           </a>
@@ -44,7 +44,7 @@ export default function Features() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
           </p>
-          <a className={styles.more} href="">
+          <a className={styles.more} href="/features">
             {" "}
             Дэлгэрэнгүй...
           </a>

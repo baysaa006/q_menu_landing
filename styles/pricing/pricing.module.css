@@ -17,14 +17,14 @@
 }
 .switcher_off {
   border-radius: 2rem;
-  width: max-content;
+  width: 130px;
   padding: 1rem;
 }
 .switcher_on {
   color: var(--inner_color);
   border-radius: 2rem;
   background-color: var(--text_color);
-  width: max-content;
+  width: 130px;
   padding: 1rem;
 }
 .container .header {
@@ -44,7 +44,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .switch {
-    font-size: 9px;
+    font-size: 11px;
+  }
+  .switcher_on {
+    width: 90px;
+  }
+  .switcher_off {
+    width: 90px;
   }
 }
 @media screen and (max-width: 565px) {

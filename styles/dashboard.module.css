@@ -32,8 +32,7 @@
 .container .small_con .left .row {
   padding: 2rem;
   align-items: center;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
   height: max-content;
   width: 100%;
   background-color: var(--main_color);
