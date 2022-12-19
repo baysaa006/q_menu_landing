@@ -13,7 +13,7 @@ module.exports = {
         buttonColor: "#000",
       },
       fontFamily: {
-        sans: ["Comfortaa", "sans-serif"],
+        sans: ["Rubik", "sans-serif"],
         serif: ["Merriweather", "serif"],
       },
     },

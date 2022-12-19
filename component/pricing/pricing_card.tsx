@@ -32,7 +32,9 @@ export default function Pricing_card(props: data) {
         <h1>₮{price}</h1>
         <h4>Сараар {year}</h4>
       </div>
-      <button className={styles.button}>Турших</button>
+      <a href="tel:+77772040" className={styles.button}>
+        Холбогдох
+      </a>
 
       <div className={styles.details}>
         {" "}

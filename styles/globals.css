@@ -1,19 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.google.com/specimen/Comfortaa");
-
 @font-face {
-  font-family: "Comfortaa";
-  src: url("../public/fonts/Comfortaa-Regular.ttf");
-  font-weight: normal;
+  font-family: "Rubik";
+  src: url("../public/fonts/Rubik-SemiBold.ttf");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../public/fonts/Comfortaa-Bold.ttf");
-  font-weight: bold;
+  src: url("../public/fonts/Rubik-Regular.ttf");
   font-style: normal;
 }
 :root {
