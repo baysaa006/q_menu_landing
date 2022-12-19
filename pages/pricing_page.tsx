@@ -8,7 +8,7 @@ export default function Pricing_page() {
   return (
     <>
       <Head>
-        <title>Qmenu - Үнийн санал</title>
+        <title>Q-Menu | Үнийн санал</title>
         <link rel="icon " href="../logo.ico" />
         <link rel="canonical" href="https://qmenu.mn/pricing_page" />
         <meta

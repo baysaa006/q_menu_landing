@@ -22,7 +22,6 @@ export default function Home() {
         <title>Рестораны цогц систем - Q-menu -Зайнаас захиалъя, төлье </title>
         <link rel="icon " href="../logo.ico" />
         <link rel="canonical" hrefLang="mn" href="https://qmenu.mn" />
-        <meta name="robots" content="qmenu.mn" />
         <meta name="geo.placename" content="Mongolia"></meta>
         <meta
           name="description"

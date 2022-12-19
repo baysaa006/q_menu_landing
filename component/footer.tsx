@@ -38,7 +38,7 @@ export default function Footer() {
         <div className={styles.row}>
           {" "}
           <h4 className={styles.p}>Бидэнтэй холбогдох</h4>
-          <a className={styles.connect} href="tel:+77772040">
+          <a className={styles.connect} href="tel:+(976)77772040">
             <Image className={styles.direct} src={phone} alt="" />
             <h4 className={styles.p}> 77772040</h4>
           </a>

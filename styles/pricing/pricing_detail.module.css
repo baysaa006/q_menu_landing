@@ -29,6 +29,19 @@
   gap: 1rem;
   display: flex;
 }
+#first {
+  font-weight: bold;
+}
+.col1 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  min-height: 130px;
+  height: max-content;
+}
 .col {
   display: flex;
   flex-direction: column;
@@ -37,7 +50,6 @@
   width: 300px;
   min-height: 130px;
   height: max-content;
-
   border-left: 1px solid var(--main_color);
 }
 .pricing_detail .row {
@@ -90,6 +102,10 @@
 }
 @media screen and (max-width: 900px) {
   .col {
+    font-size: small;
+    width: 100px;
+  }
+  .col1 {
     font-size: small;
     width: 100px;
   }
