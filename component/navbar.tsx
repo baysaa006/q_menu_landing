@@ -47,7 +47,11 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/" className={styles.glow_on_hover}>
+            <a
+              href="https://www.qmenu.mn"
+              target="_blank"
+              className={styles.glow_on_hover}
+            >
               <h4 className={styles.animate_character}>Ресторанууд</h4>
             </a>
           </li>
