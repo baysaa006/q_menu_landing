@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/pricing/pricing_desktop.module.css";
+import styles from "../../styles/pricing/pricing_detail.module.css";
 import Image from "next/image";
 import check from "../../public/icons/Check-mark.svg";
 

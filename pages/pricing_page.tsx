@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../component/navbar";
 import Nav from "../component/navbar";
-import Pricing_desktop from "../component/pricing/pricing_desktop";
+import Pricing_desktop from "../component/pricing/pricing_detail";
 import Pricing_phone from "../component/pricing/pricing_phone";
 import styles from "../styles/pricing/pricing_page.module.css";
 
@@ -15,9 +15,6 @@ export default function Pricing_page() {
       </div>
       <div className={styles.pricing_desktop}>
         <Pricing_desktop />
-      </div>
-      <div className={styles.pricing_phone}>
-        <Pricing_phone />
       </div>
     </div>
   );

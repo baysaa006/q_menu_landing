@@ -16,7 +16,14 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .detail {
+  width: max-content;
   align-items: center;
   margin-top: 1rem;
   gap: 1rem;
@@ -37,6 +44,7 @@
   width: calc(30%-20px);
 }
 .button {
+  text-align: center;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   display: flex;
@@ -77,4 +85,18 @@
 }
 #first {
   font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  .col {
+    font-size: small;
+    width: 100px;
+  }
+  .switch {
+    font-size: small;
+    width: max-content;
+  }
+  .button {
+    font-size: 8px;
+    width: 80px;
+  }
 }

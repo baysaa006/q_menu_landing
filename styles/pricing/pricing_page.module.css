@@ -24,7 +24,7 @@
 }
 @media screen and (max-width: 900px) {
   .pricing_desktop {
-    display: none;
+    display: block;
   }
   .pricing_phone {
     display: block;
