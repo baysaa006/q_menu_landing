@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../styles/features.module.css";
 import Image from "next/image";
 import diagram from "../public/icons/diagram.svg";
+import dash from "../public/icons/dash.svg";
+import invoice from "../public/icons/invoice.svg";
 
 export default function Features() {
   return (
@@ -25,7 +27,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={diagram} alt="diagram" />
+          <Image className={styles.feature_icon} src={dash} alt="diagram" />
           <h4>Гал тогооны удирдлага</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -38,7 +40,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={diagram} alt="diagram" />
+          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
           <h4>Киоск-Self ordering</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam

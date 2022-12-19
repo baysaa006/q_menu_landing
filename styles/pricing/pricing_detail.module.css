@@ -73,14 +73,16 @@
 }
 .switcher_off {
   border-radius: 2rem;
-  width: max-content;
+  width: 130px;
   padding: 1rem;
 }
 .switcher_on {
   color: var(--inner_color);
   border-radius: 2rem;
-  background-color: var(--text_color);
-  width: max-content;
+  background-color: var(--button_color);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  width: 130px;
   padding: 1rem;
 }
 #first {
@@ -92,7 +94,13 @@
     width: 100px;
   }
   .switch {
-    font-size: small;
+    font-size: 11px;
+  }
+  .switcher_off {
+    width: 90px;
+  }
+  .switcher_on {
+    width: 90px;
   }
   .button {
     font-size: 8px;

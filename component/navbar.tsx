@@ -43,7 +43,12 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/#contact" className={styles.drop_down_item}>
-              <h4> Холбоо барих</h4>
+              <h4>Холбоо барих</h4>
+            </a>
+          </li>
+          <li>
+            <a href="/" className={styles.glow_on_hover}>
+              <h4 className={styles.animate_character}>Ресторанууд</h4>
             </a>
           </li>
         </ul>

@@ -15,11 +15,11 @@ import Comment from "../component/comments/comment";
 import Contact from "../component/contact/contact";
 import Head from "next/head";
 export default function Home() {
-  const images = [main1, main2, main3, main4];
+  const images = [main1, main2, main3];
   return (
     <>
       <Head>
-        <title>Рестораны цогц систем - Qmenu -Зайнаас захиалъя, төлье </title>
+        <title>Рестораны цогц систем - Q-menu -Зайнаас захиалъя, төлье </title>
         <link rel="icon " href="../logo.ico" />
         <link rel="canonical" hrefLang="mn" href="https://qmenu.mn" />
         <meta name="robots" content="qmenu.mn" />

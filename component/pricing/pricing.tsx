@@ -16,7 +16,7 @@ export default function Pricing() {
             onClick={() => setActive(1)}
             className={active === 1 ? styles.switcher_on : styles.switcher_off}
           >
-            Сараар
+            Сар
           </button>
           <button
             onClick={() => setActive(2)}
@@ -56,7 +56,7 @@ export default function Pricing() {
               benefit1={""}
               benefit2={""}
               benefit3={""}
-              name={"Pro"}
+              name={"Standart"}
               description={""}
             />
             <Pricing_card
@@ -65,7 +65,7 @@ export default function Pricing() {
               benefit1={""}
               benefit2={""}
               benefit3={""}
-              name={"Premium"}
+              name={"Advenced"}
               description={""}
             />
           </>

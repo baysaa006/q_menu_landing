@@ -4,7 +4,6 @@ import dash1 from "../public/icons/dash1.svg";
 import dash2 from "../public/icons/dash2.svg";
 import dash3 from "../public/icons/dash3.svg";
 import Image from "next/image";
-import next_arrow from "../public/icons/next_arrow.svg";
 import dash from "../public/img/dash.png";
 
 export default function Dashboard() {

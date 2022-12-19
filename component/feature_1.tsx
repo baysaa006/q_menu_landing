@@ -4,10 +4,12 @@ import check from "../public/icons/Check-mark.svg";
 import Image from "next/image";
 import next_arrow from "../public/icons/next_arrow.svg";
 import feature from "../public/img/feature_1.png";
+import Head from "next/head";
 
 export default function Features_1() {
   return (
     <div className={styles.container}>
+      <Head children={undefined}></Head>
       <div className={styles.header}>
         <h3>Бүтээгдэхүүн</h3>
         <h1>Рестораны бүх шийдлийг нэг дороос</h1>

@@ -15,8 +15,10 @@ export default function Footer() {
       <div className={styles.main}>
         <div className={styles.row}>
           <Image className={styles.logo} src={logo} alt="logo" />
-          <h4 className={styles.ps}>
-            Our dashboard is desperately waiting for you
+          <h4>
+            Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх
+            боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс
+            юм.
           </h4>
         </div>
         <div className={styles.row}>
@@ -77,6 +79,7 @@ export default function Footer() {
             <Image className={styles.social_logo} src={link} alt="" />
           </li>
         </ul>
+        <h4>© 2022 Q-Menu, LLC.</h4>
       </div>
     </div>
   );

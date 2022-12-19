@@ -25,7 +25,7 @@
     "pages/index.jsx",
     "component/navbar.jsx",
     "next.config.js",
-    "component/image_slider.js"
+    "component/image_slider.tsx"
   ],
   "exclude": ["node_modules"]
 }
