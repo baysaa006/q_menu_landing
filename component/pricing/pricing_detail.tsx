@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import styles from "../../styles/pricing/pricing_detail.module.css";
 import Image from "next/image";
 import check from "../../public/icons/Check-mark.svg";
+import useScrollPosition from "./use_scroll";
 
 export default function Pricing_desktop() {
   const [active, setActive] = useState(1);
+  const scrollPos = useScrollPosition();
+  const navHeight = 200;
+  let pageHeight = scrollPos;
 
   return (
     <section className={styles.container}>
@@ -35,7 +39,7 @@ export default function Pricing_desktop() {
         </button>
       </div>
       <table>
-        <thead>
+        <thead className={pageHeight > 230 ? styles.fixed_nav : styles.nav}>
           <tr className={styles.pricing_detail}>
             <th className={styles.col}>Багц</th>
             <th className={styles.col}>
