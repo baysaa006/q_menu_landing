@@ -1,7 +1,6 @@
 import Head from "next/head";
 import React from "react";
-
-import Pricing_desktop from "../component/pricing/pricing_detail";
+import Pricing_detail from "../component/pricing/pricing_detail";
 import styles from "../styles/pricing/pricing_page.module.css";
 
 export default function Pricing_page() {
@@ -24,7 +23,7 @@ export default function Pricing_page() {
           <h4> Өөрийн хэрэгцээнд тохирсон багцыг сонгоорой</h4>
         </div>
         <div className={styles.pricing_desktop}>
-          <Pricing_desktop />
+          <Pricing_detail />
         </div>
       </div>
     </>

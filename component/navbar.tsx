@@ -46,15 +46,6 @@ export default function Navbar() {
               <h4>Холбоо барих</h4>
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.qmenu.mn"
-              target="_blank"
-              className={styles.glow_on_hover}
-            >
-              <h4 className={styles.animate_character}>Ресторанууд</h4>
-            </a>
-          </li>
         </ul>
       </div>
       <div className={styles.buttons}>

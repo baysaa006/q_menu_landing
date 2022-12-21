@@ -10,7 +10,7 @@ export default function Pricing() {
       <div className={styles.header}>
         <h3>Үнийн санал</h3>
         <h1>Багцаа сонгоод шууд ашигла</h1>
-        <h4> Өөрийн хэрэгцээнд тохирсон багцыг сонго</h4>
+        <h4>Өөрийн хэрэгцээнд тохирсон багцыг сонго</h4>
         <div className={styles.switch}>
           <button
             onClick={() => setActive(1)}
@@ -42,124 +42,124 @@ export default function Pricing() {
         {active === 1 && (
           <>
             <Pricing_card
-              price={"30.000"}
-              year={" "}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              price={"30,000"}
+              benefit1={"НӨАТ"}
+              benefit2={"Ширээ удирдлага"}
+              benefit3={"Захиалга"}
+              benefit4={"Үндсэн дэлгэц"}
               name={"Lite"}
               description={""}
             />
             <Pricing_card
-              price={"40.000"}
-              year={" "}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              price={"60,000"}
+              benefit1={"Хөнгөлөлт"}
+              benefit2={"Хураамж"}
+              benefit3={"Гишүүнчлэлийн удирдлага"}
               name={"Standart"}
               description={""}
+              benefit4={"Lite багц"}
             />
             <Pricing_card
               price={"50.000"}
-              year={" "}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              benefit1={"Касс"}
+              benefit2={"Тайлан"}
+              benefit3={"Гал тогоо удирдлага"}
               name={"Advenced"}
               description={""}
+              benefit4={"Standart багц"}
             />
           </>
         )}
         {active === 4 && (
           <>
             <Pricing_card
-              price={"15.000"}
-              year={",/Жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              price={"320,000"}
+              benefit1={"НӨАТ"}
+              benefit2={"Ширээ удирдлага"}
+              benefit3={"Захиалга"}
               name={"Lite"}
               description={""}
+              benefit4={"Үндсэн дэлгэц"}
             />
             <Pricing_card
-              price={"20.000"}
-              year={",/Жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Pro"}
+              price={"720,000"}
+              benefit1={"Хөнгөлөлт"}
+              benefit2={"Хураамж"}
+              benefit3={"Гишүүнчлэлийн удирдлага"}
+              name={"Standart"}
               description={""}
+              benefit4={"Lite багц"}
             />
             <Pricing_card
               price={"30.000"}
-              year={",/Жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Premium"}
+              benefit1={"Касс"}
+              benefit2={"Тайлан"}
+              benefit3={"Гал тогоо удирдлага"}
+              name={"Advenced"}
               description={""}
+              benefit4={"Standart багц"}
             />
           </>
         )}
         {active === 3 && (
           <>
             <Pricing_card
-              price={"15.000"}
-              year={",/Хагас жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              price={"180,000"}
+              benefit1={"НӨАТ"}
+              benefit2={"Ширээ удирдлага"}
+              benefit3={"Захиалга"}
               name={"Lite"}
               description={""}
+              benefit4={"Үндсэн дэлгэц"}
             />
             <Pricing_card
-              price={"20.000"}
-              year={",/Хагас жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Pro"}
+              price={"360,000"}
+              benefit1={"Хөнгөлөлт"}
+              benefit2={"Хураамж"}
+              benefit3={"Гишүүнчлэлийн удирдлага"}
+              name={"Standart"}
               description={""}
+              benefit4={"Lite багц"}
             />
             <Pricing_card
               price={"30.000"}
-              year={",/Хагас жилийн төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Premium"}
+              benefit1={"Касс"}
+              benefit2={"Тайлан"}
+              benefit3={"Гал тогоо удирдлага"}
+              name={"Advenced"}
               description={""}
+              benefit4={"Standart багц"}
             />
           </>
         )}
         {active === 2 && (
           <>
             <Pricing_card
-              price={"15.000"}
-              year={",/Улирлын төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
+              price={"90,000"}
+              benefit1={"НӨАТ"}
+              benefit2={"Ширээ удирдлага"}
+              benefit3={"Захиалга"}
               name={"Lite"}
               description={""}
+              benefit4={"Үндсэн дэлгэц"}
             />
             <Pricing_card
-              price={"20.000"}
-              year={",/Улирлын төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Pro"}
+              price={"180,000"}
+              benefit1={"Хөнгөлөлт"}
+              benefit2={"Хураамж"}
+              benefit3={"Гишүүнчлэлийн удирдлага"}
+              name={"Standart"}
               description={""}
+              benefit4={"Lite багц"}
             />
             <Pricing_card
               price={"30.000"}
-              year={",/Улирлын төлөлт"}
-              benefit1={""}
-              benefit2={""}
-              benefit3={""}
-              name={"Premium"}
+              benefit1={"Касс"}
+              benefit2={"Тайлан"}
+              benefit3={"Гал тогоо удирдлага"}
+              name={"Advenced"}
               description={""}
+              benefit4={"Standart багц"}
             />
           </>
         )}

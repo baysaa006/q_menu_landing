@@ -5,7 +5,6 @@ import styles from "../../styles/comment/comment_card.module.css";
 interface data {
   title: string;
   name: string;
-
   description: string;
   photo: any;
 }

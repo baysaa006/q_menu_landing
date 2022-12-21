@@ -39,6 +39,33 @@ export default function Features() {
             nobis officiis fuga delectus cumque laudantium.
           </p>
         </div>
+        <div className={styles.box}>
+          {" "}
+          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
+          <h4>Караоке</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            nobis officiis fuga delectus cumque laudantium.
+          </p>
+        </div>
+        <div className={styles.box}>
+          {" "}
+          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
+          <h4>Киоск-Self ordering</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            nobis officiis fuga delectus cumque laudantium.
+          </p>
+        </div>
+        <div className={styles.box}>
+          {" "}
+          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
+          <h4>Киоск-Self ordering</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            nobis officiis fuga delectus cumque laudantium.
+          </p>
+        </div>
       </div>
     </div>
   );
