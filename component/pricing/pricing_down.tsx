@@ -17,23 +17,18 @@ interface data {
 export default function Pricing_down(props: data) {
   const [down, setDown] = useState(false);
 
+  const change = () => {
+    if (down === false) {
+      setDown(true);
+    } else setDown(false);
+  };
   const { name, feature, ...others } = props;
   return (
     <div className={styles.container}>
-      <div className={styles.head}>
+      <div className={styles.head} onClick={change}>
         <h4 className={styles.name}>{name}</h4>
-        {!down && (
-          <a onClick={() => setDown(true)}>
-            <Image src={down1} alt="down" />
-          </a>
-        )}
-        {down && (
-          <>
-            <a onClick={() => setDown(false)}>
-              <Image src={up} alt="down" />
-            </a>
-          </>
-        )}
+        {!down && <Image src={down1} alt="down" />}
+        {down && <Image src={up} alt="down" />}
       </div>
 
       {down && (
