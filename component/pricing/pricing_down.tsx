@@ -15,6 +15,7 @@ interface data {
   };
 }
 export default function Pricing_down(props: data) {
+  const { name, feature, ...others } = props;
   const [down, setDown] = useState(false);
 
   const change = () => {
@@ -22,7 +23,6 @@ export default function Pricing_down(props: data) {
       setDown(true);
     } else setDown(false);
   };
-  const { name, feature, ...others } = props;
   return (
     <div className={styles.container}>
       <div className={styles.head} onClick={change}>
