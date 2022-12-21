@@ -26,6 +26,6 @@
     "component/navbar.jsx",
     "next.config.js",
     "component/image_slider.tsx"
-  ],
+, "component/pricing/use_width.js"  ],
   "exclude": ["node_modules"]
 }

@@ -4,20 +4,20 @@ import Image from "next/image";
 import check from "../../public/icons/Check-mark.svg";
 import useScrollPosition from "./use_scroll";
 import Pricing_down from "./pricing_down";
-interface data {
-  active: number;
-}
-export default function Pricing_phone(props: data) {
-  const { active, ...others } = props;
+
+export default function Pricing_phone() {
+  const [active, setActive] = useState(1);
   const [priceActive, setPriceActive] = useState(1);
   const scrollPos = useScrollPosition();
   let pageHeight = scrollPos;
 
   return (
     <div className={styles.container}>
-      <div className={pageHeight > 230 ? styles.fixed_nav : styles.nav}>
+      <div className={pageHeight > 224.5 ? styles.fixed_nav : styles.nav}>
         <div className={styles.pricing_detail}>
-          <h4 className={styles.col1}>Багц</h4>
+          <h4 className={pageHeight > 224.5 ? styles.none : styles.col1}>
+            Багц
+          </h4>
           <div className={styles.col1}>
             {active === 1 && (
               <a
@@ -28,8 +28,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Lite <br />
-                ₮30,000
+                Lite
               </a>
             )}
             {active === 2 && (
@@ -42,8 +41,6 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 Lite
-                <br />
-                ₮90,000
               </a>
             )}
             {active === 3 && (
@@ -55,8 +52,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Lite <br />
-                ₮180,000
+                Lite
               </a>
             )}
             {active === 4 && (
@@ -68,8 +64,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Lite <br />
-                ₮360,000
+                Lite
               </a>
             )}
           </div>
@@ -84,8 +79,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Standart <br />
-                ₮60,000
+                Standart
               </a>
             )}
             {active === 2 && (
@@ -98,8 +92,6 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 Standart
-                <br />
-                ₮180,000
               </a>
             )}
             {active === 3 && (
@@ -111,8 +103,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Standart <br />
-                ₮360,000
+                Standart
               </a>
             )}
             {active === 4 && (
@@ -125,8 +116,7 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 {" "}
-                Standart <br />
-                ₮720,000
+                Standart
               </a>
             )}
           </div>
@@ -141,8 +131,7 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 {" "}
-                Advenced <br />
-                ₮30,000
+                Advenced
               </a>
             )}{" "}
             {active === 2 && (
@@ -155,8 +144,7 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 {" "}
-                Advenced <br />
-                ₮30,000
+                Advenced
               </a>
             )}
             {active === 3 && (
@@ -168,8 +156,7 @@ export default function Pricing_phone(props: data) {
                     : styles.price_not_active
                 }
               >
-                Advenced <br />
-                ₮30,000
+                Advenced
               </a>
             )}
             {active === 4 && (
@@ -182,8 +169,7 @@ export default function Pricing_phone(props: data) {
                 }
               >
                 {" "}
-                Advenced <br />
-                ₮30,000
+                Advenced
               </a>
             )}
           </div>
@@ -191,31 +177,130 @@ export default function Pricing_phone(props: data) {
       </div>
       <div className={styles.small_con}>
         <h4>Багцын хураангуй</h4>
-        <div className={styles.box}>
-          <div className={styles.con}>
-            <Image src={check} alt={""} />
-            <h4>НӨАТ</h4>
-          </div>
-          <div className={styles.con}>
-            <Image src={check} alt={""} />
-            <h4>Ширээ удирдлага</h4>
-          </div>
-          <div className={styles.con}>
-            <Image src={check} alt={""} />
-            <h4>Захиалга</h4>
-          </div>
-          <div className={styles.con}>
-            <Image src={check} alt={""} />
-            <h4>Үндсэн дэлгэц</h4>
+        <div className={styles.small_switch}>
+          {" "}
+          <div className={styles.switch}>
+            <button
+              onClick={() => setActive(1)}
+              className={
+                active === 1 ? styles.switcher_on : styles.switcher_off
+              }
+            >
+              Сар
+            </button>
+            <button
+              onClick={() => setActive(2)}
+              className={
+                active === 2 ? styles.switcher_on : styles.switcher_off
+              }
+            >
+              Улирал
+            </button>
+            <button
+              onClick={() => setActive(3)}
+              className={
+                active === 3 ? styles.switcher_on : styles.switcher_off
+              }
+            >
+              Хагас жил
+            </button>
+            <button
+              onClick={() => setActive(4)}
+              className={
+                active === 4 ? styles.switcher_on : styles.switcher_off
+              }
+            >
+              Жил
+            </button>
           </div>
         </div>
+        {priceActive === 1 && (
+          <>
+            <div className={styles.box}>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>НӨАТ</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Ширээ удирдлага</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Захиалга</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Үндсэн дэлгэц</h4>
+              </div>
+            </div>
+            <div className={styles.small_switch}>
+              {active === 1 && <h4 className={styles.price}>₮30,000</h4>}
+              {active === 2 && <h4 className={styles.price}>₮90,000</h4>}
+              {active === 3 && <h4 className={styles.price}>₮180,000</h4>}
+              {active === 4 && <h4 className={styles.price}>₮360,000</h4>}
+            </div>
+          </>
+        )}
+        {priceActive === 2 && (
+          <>
+            <div className={styles.box}>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Lite багц</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Хөнгөлөлт</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Хураамж</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Гишүүнчлэлийн удирдлага</h4>
+              </div>
+            </div>
+            <div className={styles.small_switch}>
+              {active === 1 && <h4 className={styles.price}>₮60,000</h4>}
+              {active === 2 && <h4 className={styles.price}>₮180,000</h4>}
+              {active === 3 && <h4 className={styles.price}>₮360,000</h4>}
+              {active === 4 && <h4 className={styles.price}>₮720,000</h4>}
+            </div>
+          </>
+        )}
+        {priceActive === 3 && (
+          <>
+            <div className={styles.box}>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Standart багц</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Касс</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Гал тогоо удирдлага</h4>
+              </div>
+              <div className={styles.con}>
+                <Image src={check} alt={""} />
+                <h4>Тайлан</h4>
+              </div>
+            </div>
+            <div className={styles.small_switch}>
+              <h4 className={styles.price}>₮30,000</h4>
+            </div>
+          </>
+        )}
 
         <Pricing_down
           name={"Захиалга"}
           feature={{
             name: ["Захиалах"],
             check: [true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -235,7 +320,6 @@ export default function Pricing_phone(props: data) {
               "Бүтээгдэхүүн захиалгыг зогсоох, нээх",
             ],
             check: [true, true, true, true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -243,7 +327,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Үйлчилгээний заал зохион байгуулах"],
             check: [true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -251,7 +334,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Роль засварлах", "Ажилтны мэдээлэл засварлах"],
             check: [true, true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -267,7 +349,6 @@ export default function Pricing_phone(props: data) {
               "Багц лавлах",
             ],
             check: [true, true, true, true, true, true, true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -275,7 +356,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Хувийн мэдээлэл засварлах"],
             check: [true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -283,7 +363,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Үндсэн дэлгэц"],
             check: [true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -291,7 +370,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Хөнгөлөлт засварлах", "Хөнгөлөлт тооцох"],
             check: [priceActive > 1 && true, priceActive > 1 && true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -299,7 +377,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Хураамж засварлах", "Хураамж тооцох"],
             check: [priceActive > 1 && true, priceActive > 1 && true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -307,7 +384,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Гишүүн лавлах", "Гишүүнчлэлийн бүлэг"],
             check: [priceActive > 1 && true, priceActive > 1 && true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -329,7 +405,6 @@ export default function Pricing_phone(props: data) {
               priceActive > 1 && true,
               priceActive > 1 && true,
             ],
-            ...others,
           }}
         />
         <Pricing_down
@@ -337,7 +412,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Касс", "Захиалга буцаах"],
             check: [priceActive > 1 && true, priceActive > 1 && true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -345,7 +419,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Санал хүсэлт"],
             check: [priceActive > 1 && true],
-            ...others,
           }}
         />
         <Pricing_down
@@ -357,7 +430,6 @@ export default function Pricing_phone(props: data) {
               priceActive > 2 && true,
               priceActive > 2 && true,
             ],
-            ...others,
           }}
         />
         <Pricing_down
@@ -365,7 +437,6 @@ export default function Pricing_phone(props: data) {
           feature={{
             name: ["Караоке"],
             check: [priceActive > 2 && true],
-            ...others,
           }}
         />
       </div>

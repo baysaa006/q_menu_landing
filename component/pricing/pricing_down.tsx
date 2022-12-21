@@ -36,7 +36,6 @@ export default function Pricing_down(props: data) {
           {feature.name.map((name, i) => (
             <div className={styles.row} key={i}>
               <h4>{name}</h4>
-
               {feature.check[i] ? (
                 <Image className={styles.image} src={check_mark} alt="down" />
               ) : (
