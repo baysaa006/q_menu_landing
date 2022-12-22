@@ -18,7 +18,6 @@ export default function Pricing_page() {
       </Head>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h3>Үнийн санал</h3>
           <h1>Багцаа сонгоод шууд ашигла</h1>
           <h4> Өөрийн хэрэгцээнд тохирсон багцыг сонгоорой</h4>
         </div>

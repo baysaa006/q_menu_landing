@@ -27,6 +27,9 @@
   align-items: flex-start;
   justify-content: center;
 }
+.font {
+  font-weight: bold;
+}
 .detail {
   width: max-content;
   justify-content: flex-start;

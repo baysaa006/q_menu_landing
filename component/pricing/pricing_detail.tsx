@@ -17,7 +17,6 @@ export default function Pricing_detail() {
     <div className={styles.container}>
       {width > 900 && (
         <>
-          {" "}
           <div className={styles.switch}>
             <button
               onClick={() => setActive(1)}

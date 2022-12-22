@@ -18,7 +18,6 @@
 .switcher_off {
   border-radius: 2rem;
   width: 130px;
-  padding: 1rem;
 }
 .switcher_on {
   color: var(--inner_color);
@@ -27,7 +26,8 @@
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   width: 130px;
-  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .container .header {
   display: flex;
@@ -46,7 +46,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .switch {
-    font-size: 11px;
+    font-size: 12px;
   }
   .switcher_on {
     width: 90px;

@@ -16,83 +16,13 @@ export default function Pricing_features(props: data) {
         <div className={styles.pricing_detail}>
           <div className={styles.col1}>Багц</div>
           <div className={styles.col1}>
-            {active === 1 && (
-              <div className={styles.price}>
-                <h4>Lite</h4>
-                <h4>₮30,000</h4>
-              </div>
-            )}
-            {active === 2 && (
-              <div className={styles.price}>
-                <h4>Lite</h4>
-                <h4>₮90,000</h4>
-              </div>
-            )}
-            {active === 3 && (
-              <div className={styles.price}>
-                <h4>Lite</h4>
-                <h4>₮180,000</h4>
-              </div>
-            )}
-            {active === 4 && (
-              <div className={styles.price}>
-                <h4>Lite</h4>
-                <h4>₮360,000</h4>
-              </div>
-            )}
+            <h4>Lite</h4>
           </div>
           <div className={styles.col1}>
-            {" "}
-            {active === 1 && (
-              <div className={styles.price}>
-                <h4>Standart</h4>
-                <h4>₮60,000</h4>
-              </div>
-            )}
-            {active === 2 && (
-              <div className={styles.price}>
-                <h4>Standart</h4>
-                <h4>₮180,000</h4>
-              </div>
-            )}
-            {active === 3 && (
-              <div className={styles.price}>
-                <h4>Standart</h4>
-                <h4>₮360,000</h4>
-              </div>
-            )}
-            {active === 4 && (
-              <div className={styles.price}>
-                <h4>Standart</h4>
-                <h4>₮720,000</h4>
-              </div>
-            )}
+            <h4>Standart</h4>
           </div>
           <div className={styles.col1}>
-            {active === 1 && (
-              <div className={styles.price}>
-                <h4>Advenced</h4>
-                <h4>₮15.000</h4>
-              </div>
-            )}{" "}
-            {active === 2 && (
-              <div className={styles.price}>
-                <h4>Advenced</h4>
-                <h4>₮15.000</h4>
-              </div>
-            )}
-            {active === 3 && (
-              <div className={styles.price}>
-                <h4>Advenced</h4>
-                <h4>₮15.000</h4>
-              </div>
-            )}
-            {active === 4 && (
-              <div className={styles.price}>
-                <h4>Advenced</h4>
-                <h4>₮15.000</h4>
-              </div>
-            )}
+            <h4>Advenced</h4>
           </div>
         </div>
       </div>
@@ -100,7 +30,12 @@ export default function Pricing_features(props: data) {
         <h4 className={styles.col}>Багцын хураангуй</h4>
         <div className={styles.col}>
           <div className={styles.details}>
-            {" "}
+            <div className={styles.font}>
+              {active === 1 && <h4>₮30,000</h4>}
+              {active === 2 && <h4>₮90,000</h4>}
+              {active === 3 && <h4>₮180,000</h4>}
+              {active === 4 && <h4>₮360,000</h4>}
+            </div>
             <div className={styles.detail}>
               <Image src={check} alt={""} />
               <h4>Үндсэн дэлгэц</h4>
@@ -123,9 +58,13 @@ export default function Pricing_features(props: data) {
           </div>
         </div>
         <div className={styles.col}>
-          {" "}
           <div className={styles.details}>
-            {" "}
+            <div className={styles.font}>
+              {active === 1 && <h4>₮60,000</h4>}
+              {active === 2 && <h4>₮180,000</h4>}
+              {active === 3 && <h4>₮360,000</h4>}
+              {active === 4 && <h4>₮720,000</h4>}
+            </div>
             <div className={styles.detail}>
               <Image src={check} alt={""} />
               <h4>Lite багц</h4>
@@ -148,9 +87,13 @@ export default function Pricing_features(props: data) {
           </div>
         </div>
         <div className={styles.col}>
-          {" "}
           <div className={styles.details}>
-            {" "}
+            <div className={styles.font}>
+              {active === 1 && <h4>1</h4>}
+              {active === 2 && <h4>2</h4>}
+              {active === 3 && <h4>3</h4>}
+              {active === 4 && <h4>4</h4>}
+            </div>
             <div className={styles.detail}>
               <Image src={check} alt={""} />
               <h4>Standart багц</h4>

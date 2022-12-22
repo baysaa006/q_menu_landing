@@ -46,6 +46,7 @@ export default function Navbar() {
               <h4>Холбоо барих</h4>
             </a>
           </li>
+          <li></li>
         </ul>
       </div>
       <div className={styles.buttons}>
@@ -84,40 +85,52 @@ export default function Navbar() {
       )}
 
       {isNavExpanded && (
-        <ul className={styles.expanded_menu_items}>
-          <li>
-            <a
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-              }}
-              href="/#feature_1"
-            >
-              <h4>Бүтээгдэхүүн</h4>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-              }}
-              href="/#pricing"
-            >
-              {" "}
-              <h4>Үнийн санал</h4>
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-              }}
-              href="/#contact"
-            >
-              {" "}
-              <h4>Холбоо барих</h4>
-            </a>
-          </li>
-        </ul>
+        <div className={styles.expanded_menu_items}>
+          <ul className={styles.order}>
+            <li>
+              <a
+                onClick={() => {
+                  setIsNavExpanded(!isNavExpanded);
+                }}
+                href="/#feature_1"
+              >
+                <h4 className={styles.expanded_text}>Бүтээгдэхүүн</h4>
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  setIsNavExpanded(!isNavExpanded);
+                }}
+                href="/#pricing"
+              >
+                {" "}
+                <h4 className={styles.expanded_text}>Үнийн санал</h4>
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  setIsNavExpanded(!isNavExpanded);
+                }}
+                href="/#contact"
+              >
+                {" "}
+                <h4 className={styles.expanded_text}>Холбоо барих</h4>
+              </a>
+            </li>
+            <li>
+              <div className={styles.buttons_expanded}>
+                <button className={styles.button_sign_in}>
+                  <h4 className={styles.expanded_text_button}>Нэвтрэх</h4>
+                </button>
+                <button className={styles.button_sign_up}>
+                  <h4 className={styles.expanded_text_button}>Бүртгүүлэх</h4>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
       )}
     </div>
   );

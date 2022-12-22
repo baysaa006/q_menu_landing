@@ -15,10 +15,7 @@ export default function Pricing_phone() {
     <div className={styles.container}>
       <div className={pageHeight > 224.5 ? styles.fixed_nav : styles.nav}>
         <div className={styles.pricing_detail}>
-          <h4 className={pageHeight > 224.5 ? styles.none : styles.col1}>
-            Багц
-          </h4>
-          <div className={styles.col1}>
+          <div className={styles.price_navigator}>
             {active === 1 && (
               <a
                 onClick={() => setPriceActive(1)}
@@ -68,8 +65,7 @@ export default function Pricing_phone() {
               </a>
             )}
           </div>
-          <div className={styles.col1}>
-            {" "}
+          <div className={styles.price_navigator}>
             {active === 1 && (
               <a
                 onClick={() => setPriceActive(2)}
@@ -115,12 +111,11 @@ export default function Pricing_phone() {
                     : styles.price_not_active
                 }
               >
-                {" "}
                 Standart
               </a>
             )}
           </div>
-          <div className={styles.col1}>
+          <div className={styles.price_navigator}>
             {active === 1 && (
               <a
                 onClick={() => setPriceActive(3)}
@@ -133,7 +128,7 @@ export default function Pricing_phone() {
                 {" "}
                 Advenced
               </a>
-            )}{" "}
+            )}
             {active === 2 && (
               <a
                 onClick={() => setPriceActive(3)}
@@ -176,9 +171,7 @@ export default function Pricing_phone() {
         </div>
       </div>
       <div className={styles.small_con}>
-        <h4>Багцын хураангуй</h4>
         <div className={styles.small_switch}>
-          {" "}
           <div className={styles.switch}>
             <button
               onClick={() => setActive(1)}
@@ -213,65 +206,79 @@ export default function Pricing_phone() {
               Жил
             </button>
           </div>
-        </div>
-        {priceActive === 1 && (
-          <>
-            <div className={styles.box}>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>НӨАТ</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Ширээ удирдлага</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Захиалга</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Үндсэн дэлгэц</h4>
-              </div>
-            </div>
+          {priceActive === 1 && (
             <div className={styles.small_switch}>
               {active === 1 && <h4 className={styles.price}>₮30,000</h4>}
               {active === 2 && <h4 className={styles.price}>₮90,000</h4>}
               {active === 3 && <h4 className={styles.price}>₮180,000</h4>}
               {active === 4 && <h4 className={styles.price}>₮360,000</h4>}
+              <a href="tel:+(976)77772040" className={styles.button}>
+                Холбогдох
+              </a>
             </div>
-          </>
-        )}
-        {priceActive === 2 && (
-          <>
-            <div className={styles.box}>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Lite багц</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Хөнгөлөлт</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Хураамж</h4>
-              </div>
-              <div className={styles.con}>
-                <Image src={check} alt={""} />
-                <h4>Гишүүнчлэлийн удирдлага</h4>
-              </div>
-            </div>
+          )}
+          {priceActive === 2 && (
             <div className={styles.small_switch}>
               {active === 1 && <h4 className={styles.price}>₮60,000</h4>}
               {active === 2 && <h4 className={styles.price}>₮180,000</h4>}
               {active === 3 && <h4 className={styles.price}>₮360,000</h4>}
               {active === 4 && <h4 className={styles.price}>₮720,000</h4>}
+              <a href="tel:+(976)77772040" className={styles.button}>
+                Холбогдох
+              </a>
             </div>
-          </>
+          )}
+          {priceActive === 3 && (
+            <div className={styles.small_switch}>
+              <h4 className={styles.price}>₮30,000</h4>
+              <a href="tel:+(976)77772040" className={styles.button}>
+                Холбогдох
+              </a>
+            </div>
+          )}
+        </div>
+        {priceActive === 1 && (
+          <div className={styles.box}>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>НӨАТ</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Ширээ удирдлага</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Захиалга</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Үндсэн дэлгэц</h4>
+            </div>
+          </div>
+        )}
+        {priceActive === 2 && (
+          <div className={styles.box}>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Lite багц</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Хөнгөлөлт</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Хураамж</h4>
+            </div>
+            <div className={styles.con}>
+              <Image src={check} alt={""} />
+              <h4>Гишүүнчлэлийн удирдлага</h4>
+            </div>
+          </div>
         )}
         {priceActive === 3 && (
-          <>
+          <div>
             <div className={styles.box}>
               <div className={styles.con}>
                 <Image src={check} alt={""} />
@@ -290,155 +297,158 @@ export default function Pricing_phone() {
                 <h4>Тайлан</h4>
               </div>
             </div>
-            <div className={styles.small_switch}>
-              <h4 className={styles.price}>₮30,000</h4>
-            </div>
-          </>
+          </div>
         )}
-
-        <Pricing_down
-          name={"Захиалга"}
-          feature={{
-            name: ["Захиалах"],
-            check: [true],
-          }}
-        />
-        <Pricing_down
-          name={"НӨАТ"}
-          feature={{
-            name: ["НӨАТ холболт"],
-            check: [true],
-          }}
-        />
-        <Pricing_down
-          name={"Бүтээгдэхүүн удирдлага"}
-          feature={{
-            name: [
-              "Бүтээгдэхүүн ангилал засварлах",
-              "Бүтээгдэхүүн засварлах",
-              "Бүтээгдэхүүн цэс засварлах",
-              "Бүтээгдэхүүн захиалгыг зогсоох, нээх",
-            ],
-            check: [true, true, true, true],
-          }}
-        />
-        <Pricing_down
-          name={"Ширээ удирдлага"}
-          feature={{
-            name: ["Үйлчилгээний заал зохион байгуулах"],
-            check: [true],
-          }}
-        />
-        <Pricing_down
-          name={"Ажилтны удирдлага"}
-          feature={{
-            name: ["Роль засварлах", "Ажилтны мэдээлэл засварлах"],
-            check: [true, true],
-          }}
-        />
-        <Pricing_down
-          name={"Салбар удирдлага"}
-          feature={{
-            name: [
-              "Салбар засварлах",
-              "Байгууллага засварлах",
-              "Суваг засварлах",
-              "Төхөөрөмж засварлах",
-              "Төлбөрийн суваг",
-              "Баримт засварлах",
-              "Багц лавлах",
-            ],
-            check: [true, true, true, true, true, true, true],
-          }}
-        />
-        <Pricing_down
-          name={"Хувийн мэдээлэл"}
-          feature={{
-            name: ["Хувийн мэдээлэл засварлах"],
-            check: [true],
-          }}
-        />
-        <Pricing_down
-          name={"Үндсэн дэлгэц"}
-          feature={{
-            name: ["Үндсэн дэлгэц"],
-            check: [true],
-          }}
-        />
-        <Pricing_down
-          name={"Хөнгөлөлт"}
-          feature={{
-            name: ["Хөнгөлөлт засварлах", "Хөнгөлөлт тооцох"],
-            check: [priceActive > 1 && true, priceActive > 1 && true],
-          }}
-        />
-        <Pricing_down
-          name={"Хураамж"}
-          feature={{
-            name: ["Хураамж засварлах", "Хураамж тооцох"],
-            check: [priceActive > 1 && true, priceActive > 1 && true],
-          }}
-        />
-        <Pricing_down
-          name={"Гишүүнчлэлийн удирдлага"}
-          feature={{
-            name: ["Гишүүн лавлах", "Гишүүнчлэлийн бүлэг"],
-            check: [priceActive > 1 && true, priceActive > 1 && true],
-          }}
-        />
-        <Pricing_down
-          name={"Тайлан"}
-          feature={{
-            name: [
-              "Борлуулалтын тайлан",
-              "Захиалгын тайлан",
-              "Буцаалтын тайлан",
-              "Гүйлгээний тайлан",
-              "Нэгтгэл тайлан",
-              "НӨАТ тайлан",
-            ],
-            check: [
-              priceActive > 1 && true,
-              priceActive > 1 && true,
-              priceActive > 1 && true,
-              priceActive > 1 && true,
-              priceActive > 1 && true,
-              priceActive > 1 && true,
-            ],
-          }}
-        />
-        <Pricing_down
-          name={"Касс"}
-          feature={{
-            name: ["Касс", "Захиалга буцаах"],
-            check: [priceActive > 1 && true, priceActive > 1 && true],
-          }}
-        />
-        <Pricing_down
-          name={"Санал хүсэлт"}
-          feature={{
-            name: ["Санал хүсэлт"],
-            check: [priceActive > 1 && true],
-          }}
-        />
-        <Pricing_down
-          name={"Гал тогоо удирдлага"}
-          feature={{
-            name: ["Гал тогоо засварлах", "Тогооч", "Бэлэн захиалгын дэлгэц"],
-            check: [
-              priceActive > 2 && true,
-              priceActive > 2 && true,
-              priceActive > 2 && true,
-            ],
-          }}
-        />
-        <Pricing_down
-          name={"Караоке"}
-          feature={{
-            name: ["Караоке"],
-            check: [priceActive > 2 && true],
-          }}
-        />
+        <div>
+          <Pricing_down
+            name={"Захиалга"}
+            feature={{
+              name: ["Захиалах"],
+              check: [true],
+            }}
+          />
+          <Pricing_down
+            name={"НӨАТ"}
+            feature={{
+              name: ["НӨАТ холболт"],
+              check: [true],
+            }}
+          />
+          <Pricing_down
+            name={"Бүтээгдэхүүн удирдлага"}
+            feature={{
+              name: [
+                "Бүтээгдэхүүн ангилал засварлах",
+                "Бүтээгдэхүүн засварлах",
+                "Бүтээгдэхүүн цэс засварлах",
+                "Бүтээгдэхүүн захиалгыг зогсоох, нээх",
+              ],
+              check: [true, true, true, true],
+            }}
+          />
+          <Pricing_down
+            name={"Ширээ удирдлага"}
+            feature={{
+              name: ["Үйлчилгээний заал зохион байгуулах"],
+              check: [true],
+            }}
+          />
+          <Pricing_down
+            name={"Ажилтны удирдлага"}
+            feature={{
+              name: ["Роль засварлах", "Ажилтны мэдээлэл засварлах"],
+              check: [true, true],
+            }}
+          />
+          <Pricing_down
+            name={"Салбар удирдлага"}
+            feature={{
+              name: [
+                "Салбар засварлах",
+                "Байгууллага засварлах",
+                "Суваг засварлах",
+                "Төхөөрөмж засварлах",
+                "Төлбөрийн суваг",
+                "Баримт засварлах",
+                "Багц лавлах",
+              ],
+              check: [true, true, true, true, true, true, true],
+            }}
+          />
+          <Pricing_down
+            name={"Хувийн мэдээлэл"}
+            feature={{
+              name: ["Хувийн мэдээлэл засварлах"],
+              check: [true],
+            }}
+          />
+          <Pricing_down
+            name={"Үндсэн дэлгэц"}
+            feature={{
+              name: ["Үндсэн дэлгэц"],
+              check: [true],
+            }}
+          />
+          <Pricing_down
+            name={"Хөнгөлөлт"}
+            feature={{
+              name: ["Хөнгөлөлт засварлах", "Хөнгөлөлт тооцох"],
+              check: [priceActive > 1 && true, priceActive > 1 && true],
+            }}
+          />
+          <Pricing_down
+            name={"Хураамж"}
+            feature={{
+              name: ["Хураамж засварлах", "Хураамж тооцох"],
+              check: [priceActive > 1 && true, priceActive > 1 && true],
+            }}
+          />
+          <Pricing_down
+            name={"Гишүүнчлэлийн удирдлага"}
+            feature={{
+              name: ["Гишүүн лавлах", "Гишүүнчлэлийн бүлэг"],
+              check: [priceActive > 1 && true, priceActive > 1 && true],
+            }}
+          />
+          <Pricing_down
+            name={"Тайлан"}
+            feature={{
+              name: [
+                "Борлуулалтын тайлан",
+                "Захиалгын тайлан",
+                "Буцаалтын тайлан",
+                "Гүйлгээний тайлан",
+                "Нэгтгэл тайлан",
+                "НӨАТ тайлан",
+              ],
+              check: [
+                priceActive > 1 && true,
+                priceActive > 1 && true,
+                priceActive > 1 && true,
+                priceActive > 1 && true,
+                priceActive > 1 && true,
+                priceActive > 1 && true,
+              ],
+            }}
+          />
+          <Pricing_down
+            name={"Касс"}
+            feature={{
+              name: ["Касс", "Захиалга буцаах"],
+              check: [priceActive > 1 && true, priceActive > 1 && true],
+            }}
+          />
+          <Pricing_down
+            name={"Санал хүсэлт"}
+            feature={{
+              name: ["Санал хүсэлт"],
+              check: [priceActive > 1 && true],
+            }}
+          />
+          <Pricing_down
+            name={"Гал тогоо удирдлага"}
+            feature={{
+              name: ["Гал тогоо засварлах", "Тогооч", "Бэлэн захиалгын дэлгэц"],
+              check: [
+                priceActive > 2 && true,
+                priceActive > 2 && true,
+                priceActive > 2 && true,
+              ],
+            }}
+          />
+          <Pricing_down
+            name={"Караоке"}
+            feature={{
+              name: ["Караоке"],
+              check: [priceActive > 2 && true],
+            }}
+          />
+        </div>
+        <div className={styles.small_switch}>
+          <a href="tel:+(976)77772040" className={styles.button}>
+            Холбогдох
+          </a>
+        </div>
       </div>
     </div>
   );

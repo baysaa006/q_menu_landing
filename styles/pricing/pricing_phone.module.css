@@ -2,17 +2,22 @@
   height: max-content;
   width: 100%;
 }
+.price_navigator {
+  font-weight: bold;
+}
 .pricing_detail {
   height: max-content;
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-evenly;
 }
 .small_con {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  height: max-content;
   gap: 1rem;
 }
 .box {
@@ -27,14 +32,14 @@
   flex-direction: row;
 }
 .fixed_nav {
+  border-bottom: 1px solid var(--main_color);
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border: 1px solid var(--main_color);
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: max-content;
+  height: 50px;
   background-color: var(--background_color);
-  top: 13%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
@@ -58,30 +63,17 @@
   background-color: var(--button_color);
 }
 .price_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   border-bottom: 2px solid var(--special_text);
 }
-.col1 {
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 400px;
-  height: 60px;
-}
+
 .col:nth-child(1) {
   align-items: flex-start;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  min-height: 40px;
-  height: max-content;
-  border-left: 2px solid var(--main_color);
-}
+
 .pricing_detail .row {
   width: 30%;
 }
@@ -141,7 +133,7 @@
     width: 90px;
   }
   .button {
-    font-size: 8px;
+    font-size: 12px;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
     padding-left: 0.8rem;
@@ -150,10 +142,16 @@
 }
 @media screen and (max-width: 500px) {
   .container {
-    width: 150%;
+    width: 130%;
+  }
+  .fixed_nav {
+    top: 10%;
   }
 }
 @media screen and (max-width: 400px) {
+  .container {
+    width: 140%;
+  }
   .col1 {
     height: 40px;
   }
@@ -168,9 +166,7 @@
     padding: 0.2rem;
     width: 60px;
   }
-  .fixed_nav {
-    top: 10%;
-  }
+
   .button {
     padding-bottom: 0.2rem;
     padding-top: 0.2rem;
