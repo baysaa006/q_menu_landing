@@ -38,8 +38,8 @@
   align-items: center;
   width: 100%;
   height: 50px;
+  top: 80px;
   background-color: var(--background_color);
-  top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
