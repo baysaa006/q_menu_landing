@@ -14,8 +14,8 @@ export default function Comment() {
       <div className={styles.container_fluid}>
         <div className={styles.row}>
           <div className={styles.header}>
-            <h3>Хамтрагчид</h3>
-            <h1>Итгэл хүлээлгэсэн хамтрагчид</h1>
+            <h3>Хамтрагчидийн сэтгэгдэл</h3>
+            <h1>Бидний талаар</h1>
           </div>
           <div className={styles.col_12}>
             <div className={styles.carousel__wrapper}>

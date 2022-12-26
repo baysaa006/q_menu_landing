@@ -1,11 +1,9 @@
-import { doesNotThrow } from "assert";
 import React, { useState } from "react";
 import styles from "../../styles/pricing/pricing_down.module.css";
 import up from "../../public/icons/up.svg";
 import down1 from "../../public/icons/down_arrow.svg";
 import Image from "next/image";
 import check_mark from "../../public/icons/Check-mark.svg";
-import { spawn } from "child_process";
 
 interface data {
   name: string;

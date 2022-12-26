@@ -38,24 +38,30 @@ export default function Navbar() {
           </li>
 
           <li>
-            <a href="/#pricing" className={styles.drop_down_item}>
+            <a href="#pricing" className={styles.drop_down_item}>
               <h4> Үнийн санал</h4>
             </a>
           </li>
+
           <li>
             <a href="/#contact" className={styles.drop_down_item}>
               <h4>Холбоо барих</h4>
             </a>
           </li>
-          <li></li>
+          <li>
+            {" "}
+            <a href="/#fag" className={styles.drop_down_item}>
+              <h4>Асуулт хариулт</h4>
+            </a>
+          </li>
         </ul>
       </div>
       <div className={styles.buttons}>
         <button className={styles.button_sign_in}>
-          <h4>Нэвтрэх</h4>
+          <h2 className={styles.text}>Нэвтрэх</h2>
         </button>
         <button className={styles.button_sign_up}>
-          <h4>Бүртгүүлэх</h4>
+          <h2 className={styles.text}>Бүртгүүлэх</h2>
         </button>
       </div>
       {!isNavExpanded && (
@@ -103,7 +109,7 @@ export default function Navbar() {
                   onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
                   }}
-                  href="/#pricing"
+                  href="/pricing"
                 >
                   {" "}
                   <h4 className={styles.expanded_text}>Үнийн санал</h4>
@@ -123,10 +129,10 @@ export default function Navbar() {
               <li>
                 <div className={styles.buttons_expanded}>
                   <button className={styles.button_sign_in}>
-                    <h4 className={styles.expanded_text_button}>Нэвтрэх</h4>
+                    <h2 className={styles.expanded_text_button}>Нэвтрэх</h2>
                   </button>
                   <button className={styles.button_sign_up}>
-                    <h4 className={styles.expanded_text_button}>Бүртгүүлэх</h4>
+                    <h2 className={styles.expanded_text_button}>Бүртгүүлэх</h2>
                   </button>
                 </div>
               </li>

@@ -14,12 +14,13 @@ import Partners from "../component/partners";
 import Comment from "../component/comments/comment";
 import Contact from "../component/contact/contact";
 import Head from "next/head";
+import Fag from "../component/fag";
 export default function Home() {
   const images = [main1, main2, main3];
   return (
     <>
       <Head>
-        <title>Рестораны цогц систем - Q-menu -Зайнаас захиалъя, төлье </title>
+        <title>Рестораны цогц систем | Q-menu | Зайнаас захиалъя, төлье </title>
         <link rel="icon " href="../logo.ico" />
         <link rel="canonical" hrefLang="mn" href="https://qmenu.mn" />
         <meta name="geo.placename" content="Mongolia"></meta>
@@ -27,6 +28,7 @@ export default function Home() {
           name="description"
           content="Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс юм."
         ></meta>
+        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
       </Head>
 
       <div className={styles.slider}>
@@ -58,6 +60,9 @@ export default function Home() {
       </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="fag" className={styles.commment}>
+        <Fag />
       </div>
     </>
   );

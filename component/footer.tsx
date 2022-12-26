@@ -15,37 +15,37 @@ export default function Footer() {
       <div className={styles.main}>
         <div className={styles.row}>
           <Image className={styles.logo} src={logo} alt="logo" />
-          <h4>
+          <h2>
             Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх
             боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс
             юм.
-          </h4>
+          </h2>
         </div>
         <div className={styles.row}>
-          <h4 className={styles.p}>Бүтээгдэхүүн</h4>
+          <h2 className={styles.p}>Бүтээгдэхүүн</h2>
 
           <a href="#feature_1">
-            <h4 className={styles.p}>Ухаалаг QR цэс</h4>
+            <h2 className={styles.p}>Ухаалаг QR цэс</h2>
           </a>
           <a href="#feature_2">
-            <h4 className={styles.p}>Кассын систем</h4>
+            <h2 className={styles.p}>Кассын систем</h2>
           </a>
           <a href="#features">
-            <h4 className={styles.p}>Нэмэлт шийдэлүүд</h4>
+            <h2 className={styles.p}>Нэмэлт шийдэлүүд</h2>
           </a>
         </div>
 
         <div className={styles.row}>
           {" "}
-          <h4 className={styles.p}>Бидэнтэй холбогдох</h4>
+          <h2 className={styles.p}>Бидэнтэй холбогдох</h2>
           <a className={styles.connect} href="tel:+(976)77772040">
             <Image className={styles.direct} src={phone} alt="" />
-            <h4 className={styles.p}> 77772040</h4>
+            <h2 className={styles.p}> 77772040</h2>
           </a>
           <a className={styles.connect} href="#contact">
             {" "}
             <Image className={styles.direct} src={email} alt="" />
-            <h4 className={styles.p}> info@qmenu.mn</h4>
+            <h2 className={styles.p}> info@qmenu.mn</h2>
           </a>
           <a
             className={styles.connect}
@@ -54,10 +54,10 @@ export default function Footer() {
           >
             {" "}
             <Image className={styles.direct} src={map} alt="" />
-            <h4 className={styles.p}>
+            <h2 className={styles.p}>
               Рояал плаза барилга,БЗД, 26-р хороо, <br />
               Улаанбаатар хот, Монгол улс.
-            </h4>
+            </h2>
           </a>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Footer() {
             <Image className={styles.social_logo} src={link} alt="" />
           </li>
         </ul>
-        <h4>© 2022 Q-Menu, LLC.</h4>
+        <h2>© 2022 Q-Menu, LLC.</h2>
       </div>
     </div>
   );

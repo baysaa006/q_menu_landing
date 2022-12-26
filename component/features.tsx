@@ -4,6 +4,8 @@ import Image from "next/image";
 import diagram from "../public/icons/diagram.svg";
 import dash from "../public/icons/dash.svg";
 import invoice from "../public/icons/invoice.svg";
+import gif from "../public/icons/outilne.gif";
+import Code from "./animations/code";
 
 export default function Features() {
   return (
@@ -14,8 +16,7 @@ export default function Features() {
       </div>
       <div className={styles.small_con}>
         <div className={styles.box}>
-          <Image className={styles.feature_icon} src={diagram} alt="diagram" />
-          <h4>Андройд Касс</h4>
+          <Code /> <h4>Андройд Касс</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
@@ -23,8 +24,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={dash} alt="diagram" />
-          <h4>Гал тогооны удирдлага</h4>
+          <Code /> <h4>Гал тогооны удирдлага</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
@@ -32,8 +32,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
-          <h4>Киоск-Self ordering</h4>
+          <Code /> <h4>Киоск-Self ordering</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
@@ -41,8 +40,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
-          <h4>Караоке</h4>
+          <Code /> <h4>Караоке</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
@@ -50,8 +48,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
-          <h4>Киоск-Self ordering</h4>
+          <Code /> <h4> Бүх төрлийн тайлан</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.
@@ -59,8 +56,7 @@ export default function Features() {
         </div>
         <div className={styles.box}>
           {" "}
-          <Image className={styles.feature_icon} src={invoice} alt="diagram" />
-          <h4>Киоск-Self ordering</h4>
+          <Code /> <h4>Киоск-Self ordering</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
             nobis officiis fuga delectus cumque laudantium.

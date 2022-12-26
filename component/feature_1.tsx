@@ -5,11 +5,14 @@ import Image from "next/image";
 import next_arrow from "../public/icons/next_arrow.svg";
 import feature from "../public/img/feature_1.png";
 import Head from "next/head";
+import useScrollPosition from "./pricing/use_scroll";
+import Check from "./animations/check";
 
 export default function Features_1() {
+  const scrollPos = useScrollPosition();
+  let pageHeight = scrollPos;
   return (
     <div className={styles.container}>
-      <Head children={undefined}></Head>
       <div className={styles.header}>
         <h3>Бүтээгдэхүүн</h3>
         <h1>Рестораны бүх шийдлийг нэг дороос</h1>
@@ -26,27 +29,26 @@ export default function Features_1() {
           <ul>
             <li className={styles.row}>
               {" "}
-              <Image alt="down" src={check} />
-              <h4>Ресторан доторх захиалга</h4>
+              <Check /> <h4>Ресторан доторх захиалга</h4>
             </li>
             <li className={styles.row}>
               {" "}
-              <Image alt="down" src={check} />
-              <h4>Урьдчилсан захиалга</h4>
+              <Check /> <h4>Урьдчилсан захиалга</h4>
             </li>
 
             <li className={styles.row}>
               {" "}
-              <Image alt="down" src={check} />
+              <Check />
               <h4>Хүргэлт</h4>
             </li>
           </ul>
           <button className={styles.start}>
-            <h4> Эхлэх</h4>
+            <h4 className={styles.text}> Эхлэх</h4>
 
             <Image alt="down" src={next_arrow} />
           </button>
         </div>
+
         <div className={styles.rigth}>
           <Image className={styles.feature_img} alt="feature_1" src={feature} />
         </div>

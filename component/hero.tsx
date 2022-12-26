@@ -5,6 +5,8 @@ import slugin_second from "../public/icons/second.svg";
 import slugin_third from "../public/icons/third.svg";
 import slugin_first from "../public/icons/first.svg";
 import hero_pic from "../public/img/hero_pic.svg";
+import Test from "./animations/check";
+import Qr from "./animations/qr";
 
 export default function Hero() {
   return (
@@ -26,26 +28,25 @@ export default function Hero() {
             <ul>
               <li>
                 {" "}
-                <Image alt="down" src={slugin_first} />
-                <h4>Ресторан доторх захиалга</h4>
+                <Qr />
+                <h4>Цахим захиалга</h4>
               </li>
               <li>
                 {" "}
-                <Image alt="down" src={slugin_second} />
+                <Qr />
                 <h4>Урьдчилсан захиалга</h4>
               </li>
 
               <li>
                 {" "}
-                <Image alt="down" src={slugin_third} />
+                <Qr />
                 <h4>Хүргэлт</h4>
               </li>
             </ul>
           </div>
-
           <div className={styles.register_button}>
             <button>
-              <h4 className={styles.register}>Ресторан бүртгүүлэх</h4>
+              <h2 className={styles.register}>Ресторан бүртгүүлэх</h2>
             </button>
           </div>
         </div>

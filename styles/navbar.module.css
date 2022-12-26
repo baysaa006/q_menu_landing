@@ -36,6 +36,7 @@
   padding: 1rem;
   border-radius: 0.1rem;
 }
+
 .drop_down_items :hover {
   background-color: var(--main_color);
 }
@@ -51,10 +52,7 @@
 .buttons {
   display: flex;
 }
-.button_sign_in:hover {
-  background-color: var(--button_color);
-  color: var(--inner_color);
-}
+
 .button_sign_in {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
@@ -63,15 +61,19 @@
   border: 1px solid var(--text_color);
   border-radius: 2rem;
 }
+.button_sign_in:hover {
+  background-color: var(--button_color);
+  color: var(--inner_color) !important;
+}
 .button_sign_up:hover {
   background-color: var(--inner_color);
-  color: var(--button_color);
+  color: var(--button_color) !important;
 }
 
 .button_sign_up {
   margin-left: 10px;
   background-color: var(--button_color);
-  color: var(--inner_color);
+  color: var(--inner_color) !important;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   padding-right: 1rem;

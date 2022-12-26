@@ -5,29 +5,31 @@ import dash2 from "../public/icons/dash2.svg";
 import dash3 from "../public/icons/dash3.svg";
 import Image from "next/image";
 import dash from "../public/img/dash.png";
+import Analytic from "./animations/analytic";
+import Speed from "./animations/speed";
+import File from "./animations/file";
 
 export default function Dashboard() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>Хяналтын самбар</h3>
         <h1>Ашиглахад хялбар хяналтын самбар</h1>
       </div>
       <div className={styles.small_con}>
         <div className={styles.left}>
           <div className={styles.row}>
             {" "}
-            <Image className={styles.img} alt="dash" src={dash1} />
+            <Analytic />
             <h4>Ресторан доторх захиалга</h4>
           </div>
           <div className={styles.row}>
             {" "}
-            <Image alt="dash" src={dash2} />
+            <Speed />
             <h4>Урьдчилсан захиалга</h4>
           </div>
           <div className={styles.row}>
             {" "}
-            <Image alt="dash" src={dash3} />
+            <File />
             <h4>Хүргэлт</h4>
           </div>
         </div>

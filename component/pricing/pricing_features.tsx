@@ -829,20 +829,8 @@ export default function Pricing_features(props: data) {
           </div>
         </div>
       </div>
+
       <div className={styles.pricing_detail}>
-        <div className={styles.col}></div>
-        <div className={styles.col}>
-          {" "}
-          <a href="tel:+77772040" className={styles.button}>
-            Холбогдох
-          </a>
-        </div>
-        <div className={styles.col}>
-          {" "}
-          <a href="tel:+77772040" className={styles.button}>
-            Холбогдох
-          </a>
-        </div>
         <div className={styles.col}>
           {" "}
           <a href="tel:+77772040" className={styles.button}>
