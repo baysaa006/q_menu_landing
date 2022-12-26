@@ -20,12 +20,10 @@
 .down {
   cursor: pointer;
   font-weight: bold;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .rotate {
   cursor: pointer;
   font-weight: bold;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: rotate(45deg);
 }
 
@@ -40,13 +38,11 @@
 }
 .up {
   cursor: pointer;
-  transition: 2s all ease;
   font-weight: bold;
 }
 
 .lower {
   overflow: hidden;
-  transition: top 0.8s ease-in;
   line-height: 0;
   padding: 0 2em;
   color: transparent;
@@ -54,7 +50,6 @@
 
 .show {
   color: var(--text_color);
-  transition: all 0.8s ease-in-out;
   line-height: 1.5rem;
   padding: 0 2em;
 }
