@@ -3,6 +3,8 @@ import styles from "../../styles/pricing/pricing_card.module.css";
 import Image from "next/image";
 import check from "../../public/icons/Check-mark.svg";
 import router from "next/router";
+import Check from "../animations/check";
+import Phone from "../animations/phone";
 interface data {
   price: string;
   name: string;
@@ -33,9 +35,9 @@ export default function Pricing_card(props: data) {
         <h1>₮{price}</h1>
       </div>
       <a href="tel:+(976)77772040" className={styles.button}>
+        <Phone />
         Холбогдох
       </a>
-
       <div className={styles.details}>
         {" "}
         <h4 className={styles.detail_name}>{name} багцанд дараах:</h4>

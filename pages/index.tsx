@@ -28,7 +28,6 @@ export default function Home() {
           name="description"
           content="Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс юм."
         ></meta>
-        <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
       </Head>
 
       <div className={styles.slider}>

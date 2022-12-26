@@ -31,7 +31,7 @@ export default function Fag() {
           className={styles.col}
         >
           <div className={styles.upper}>
-            <h1>Q-Menu гэж юу вэ?</h1>
+            <h1 className={styles.header}>Q-Menu гэж юу вэ?</h1>
             <h1 className={down.first ? styles.rotate : styles.down}>+</h1>
           </div>
           <p className={down.first ? styles.show : styles.lower}>
@@ -56,7 +56,7 @@ export default function Fag() {
           className={styles.col}
         >
           <div className={styles.upper}>
-            <h1>Кассын системтэй юу?</h1>
+            <h1 className={styles.header}>Кассын системтэй юу?</h1>
             <h1 className={down.second ? styles.rotate : styles.down}>+</h1>
           </div>
           <p className={down.second ? styles.show : styles.lower}>
@@ -80,7 +80,7 @@ export default function Fag() {
           className={styles.col}
         >
           <div className={styles.upper}>
-            <h1>Таблет меню байгаа юу? </h1>
+            <h1 className={styles.header}>Таблет меню байгаа юу? </h1>
             <h1 className={down.third ? styles.rotate : styles.down}>+</h1>
           </div>
           <p className={down.third ? styles.show : styles.lower}>
@@ -103,7 +103,7 @@ export default function Fag() {
           className={styles.col}
         >
           <div className={styles.upper}>
-            <h1>Хэрхэн харилцагч болох вэ?</h1>
+            <h1 className={styles.header}>Хэрхэн харилцагч болох вэ?</h1>
             <h1 className={down.fourth ? styles.rotate : styles.down}>+</h1>
           </div>
           <p className={down.fourth ? styles.show : styles.lower}>

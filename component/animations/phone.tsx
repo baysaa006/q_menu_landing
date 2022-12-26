@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../public/lottie/qr.json";
+import animationData from "../../public/lottie/phone.json";
 
-function Qr() {
+function Phone() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -15,11 +15,11 @@ function Qr() {
   return (
     <Lottie
       options={defaultOptions}
-      height={45}
-      width={45}
+      height={30}
+      width={30}
       style={{ margin: 0 }}
     />
   );
 }
 
-export default Qr;
+export default Phone;

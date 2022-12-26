@@ -21,6 +21,7 @@
 }
 
 .carousel__slide {
+  mix-blend-mode: hue;
   animation: scroll var(--iteration-time) linear infinite;
   display: flex;
   flex-direction: column;
