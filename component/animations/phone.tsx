@@ -17,7 +17,7 @@ function Phone() {
       options={defaultOptions}
       height={30}
       width={30}
-      style={{ margin: 0 }}
+      style={{ margin: 10 }}
     />
   );
 }
