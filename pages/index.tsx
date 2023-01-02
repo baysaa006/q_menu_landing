@@ -42,7 +42,7 @@ export default function Home() {
       <div id="feature_2" className={styles.feature1}>
         <Features_2 />
       </div>
-      <div className={styles.features}>
+      <div id="features" className={styles.features}>
         <Features />
       </div>
       <div className={styles.dash}>

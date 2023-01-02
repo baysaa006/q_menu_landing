@@ -34,6 +34,11 @@ export default function Navbar() {
                   <h4>Кассын систем</h4>
                 </a>
               </li>
+              <li className={styles.item}>
+                <a href="/#features">
+                  <h4>Нэмэлт шийдэлүүд</h4>
+                </a>
+              </li>
             </ul>
           </li>
 
@@ -42,7 +47,11 @@ export default function Navbar() {
               <h4> Үнийн санал</h4>
             </a>
           </li>
-
+          <li>
+            <a href="/#partners" className={styles.drop_down_item}>
+              <h4>Харилцагчид</h4>
+            </a>
+          </li>
           <li>
             <a href="/#contact" className={styles.drop_down_item}>
               <h4>Холбоо барих</h4>

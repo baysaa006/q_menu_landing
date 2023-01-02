@@ -30,9 +30,6 @@ export default function Footer() {
           <a href="#feature_2">
             <h2 className={styles.p}>Кассын систем</h2>
           </a>
-          <a href="#features">
-            <h2 className={styles.p}>Нэмэлт шийдэлүүд</h2>
-          </a>
         </div>
 
         <div className={styles.row}>
