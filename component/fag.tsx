@@ -11,7 +11,6 @@ export default function Fag() {
   const downPlus = () => {
     setDown({ first: false, second: false, third: false, fourth: false });
   };
-
   return (
     <div className={styles.container}>
       <h3>Асуулт,хариулт</h3>

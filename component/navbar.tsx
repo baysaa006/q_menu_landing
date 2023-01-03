@@ -19,27 +19,9 @@ export default function Navbar() {
       <div className={styles.navs}>
         <ul className={styles.drop_down}>
           <li className={styles.drop_down_feuture}>
-            <a href="/#feature_1">
+            <a href="/#features">
               <h4>Бүтээгдэхүүн</h4>
             </a>
-            <Image alt="down" src={down_arrow} />
-            <ul className={styles.drop_down_items}>
-              <li className={styles.item}>
-                <a href="/#feature_1">
-                  <h4>Ухаалаг Qr цэс</h4>
-                </a>
-              </li>
-              <li className={styles.item}>
-                <a href="/#feature_2">
-                  <h4>Кассын систем</h4>
-                </a>
-              </li>
-              <li className={styles.item}>
-                <a href="/#features">
-                  <h4>Нэмэлт шийдэлүүд</h4>
-                </a>
-              </li>
-            </ul>
           </li>
 
           <li>

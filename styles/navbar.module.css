@@ -58,27 +58,25 @@
   padding-bottom: 0.2rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  border: 1px solid var(--text_color);
   border-radius: 2rem;
 }
 .button_sign_in:hover {
-  background-color: var(--button_color);
-  color: var(--inner_color) !important;
+  color: var(--text_color);
+  background-color: #fee600;
 }
 .button_sign_up:hover {
-  background-color: var(--inner_color);
-  color: var(--button_color) !important;
+  background-color: #fee600;
+  color: var(--text_color);
 }
 
 .button_sign_up {
   margin-left: 10px;
-  background-color: var(--button_color);
-  color: var(--inner_color) !important;
+  background-color: #fee600;
+  color: var(--text_color);
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  border: 1px solid var(--text_color);
   border-radius: 2rem;
 }
 .menu {

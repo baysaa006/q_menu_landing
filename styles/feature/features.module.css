@@ -8,6 +8,7 @@
   padding: 2rem;
 }
 .container .header {
+  padding-bottom: 1rem;
   align-items: center;
   width: 95%;
   display: flex;
@@ -39,6 +40,28 @@
   gap: 1rem;
   padding: 1rem;
   height: max-content;
+}
+
+.switch {
+  margin-bottom: 1rem;
+  width: max-content;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  background-color: var(--main_color);
+}
+.switcher_off {
+  border-radius: 2rem;
+  width: 15vw;
+  padding: 1rem;
+}
+.switcher_on {
+  border-radius: 2rem;
+  background-color: var(--color);
+  width: 15vw;
+  padding: 1rem;
 }
 @media screen and (max-width: 865px) {
   .small_con {

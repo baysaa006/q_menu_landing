@@ -8,6 +8,7 @@ import map from "../public/icons/map.svg";
 import link from "../public/icons/link.svg";
 import face from "../public/icons/facebook.svg";
 import insta from "../public/icons/Twitter.svg";
+import Head from "next/head";
 
 export default function Footer() {
   return (
@@ -22,13 +23,21 @@ export default function Footer() {
           </h2>
         </div>
         <div className={styles.row}>
+          {" "}
           <h2 className={styles.p}>Бүтээгдэхүүн</h2>
-
           <a href="#feature_1">
             <h2 className={styles.p}>Ухаалаг QR цэс</h2>
           </a>
           <a href="#feature_2">
             <h2 className={styles.p}>Кассын систем</h2>
+          </a>
+          <a href="#pricing">
+            {" "}
+            <h2 className={styles.p}>Үнийн санал</h2>
+          </a>
+          <a href="#partners">
+            {" "}
+            <h2 className={styles.p}>Харилцагчид</h2>
           </a>
         </div>
 

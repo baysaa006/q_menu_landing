@@ -1,8 +1,5 @@
 import Hero from "../component/hero";
 import styles from "../styles/Home.module.css";
-import Features_2 from "../component/feature_2";
-import Features from "../component/features";
-import Features_1 from "../component/feature_1";
 import Slider from "../component/image_slider";
 import main1 from "../public/img/main1.jpg";
 import main2 from "../public/img/main2.jpg";
@@ -15,7 +12,12 @@ import Comment from "../component/comments/comment";
 import Contact from "../component/contact/contact";
 import Head from "next/head";
 import Fag from "../component/fag";
+import useWindowDimensions from "../component/pricing/use_width";
+import WebFeature from "../component/feature/webFeature";
+import PhoneFeature from "../component/feature/phoneFeature";
 export default function Home() {
+  const { width } = useWindowDimensions();
+
   const images = [main1, main2, main3];
   return (
     <>
@@ -36,14 +38,9 @@ export default function Home() {
       <div className={styles.hero}>
         <Hero />
       </div>
-      <div id="feature_1" className={styles.feature1}>
-        <Features_1 />
-      </div>
-      <div id="feature_2" className={styles.feature1}>
-        <Features_2 />
-      </div>
       <div id="features" className={styles.features}>
-        <Features />
+        {width > 900 && <WebFeature />}
+        {width < 900 && <PhoneFeature />}
       </div>
       <div className={styles.dash}>
         <Dashboard />

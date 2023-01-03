@@ -34,7 +34,7 @@ export default function Pricing_card(props: data) {
       <div className={styles.customs}>
         <h1>₮{price}</h1>
       </div>
-      <a href="tel:+(976)77772040" className={styles.button}>
+      <a href="tel:+(976)77772040" className={styles.call}>
         <Phone />
         Холбогдох
       </a>

@@ -1,0 +1,75 @@
+.container {
+  border-top: 1px solid var(--main_color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.con {
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+}
+.smallCon {
+  width: 80%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notActiveCon {
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  border-radius: 2rem;
+  color: #fff !important;
+  background-color: var(--button_color);
+}
+.activeCon {
+  background-color: var(--main_color);
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  border-radius: 2rem;
+}
+.notActive {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+.content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 80%;
+}
+.buttons {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.demo {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  background-color: var(--button_color);
+  width: max-content;
+}
