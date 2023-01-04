@@ -36,8 +36,10 @@ export default function FeaturesWebCard(prop: data) {
         <h1>Рестораны бүх шийдлийг нэг дороос</h1> */}
       </div>
       <div className={styles.small_con}>
+        <div className={styles.rigth}>
+          <Image className={styles.feature_img} alt="feature_1" src={img} />
+        </div>
         <div className={styles.left}>
-          <h4 className={styles.name_of_feature}>{title}</h4>
           <h1 className={styles.title_of_feature}>{description}</h1>
           <p className={styles.description_of_feature}>{longDescription}</p>
           <ul>
@@ -56,15 +58,11 @@ export default function FeaturesWebCard(prop: data) {
               <h4>{featureName_3}</h4>
             </li>
           </ul>
-          <a href={`/${direction}`}>
+          <a className={styles.more} href={`/${direction}`}>
             <button className={styles.start}>
-              <h4> Эхлэх</h4>
-              <Image alt="down" src={next_arrow} />
+              <h4> Дэлгэрэнгүй</h4>
             </button>
           </a>
-        </div>
-        <div className={styles.rigth}>
-          <Image className={styles.feature_img} alt="feature_1" src={img} />
         </div>
       </div>
     </div>

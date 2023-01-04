@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "../../styles/feature/features.module.css";
 import feature_1 from "../../public/img/feature_1.png";
 import feature_2 from "../../public/img/feature_2.png";
+import logo from "../../public/img/logo.png";
+import Image from "next/image";
 import Code from "../animations/code";
 import FeatureWeb from "./featureWebCard";
 
@@ -11,7 +13,12 @@ function WebFeature() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>Бүтээгдэхүүн </h3> <h1>Рестораны бүх шийдлийг нэг дороос</h1>
+        <h1 className={styles.headText}>
+          {" "}
+          Ресторан удирдлагын цогц систем
+          <br /> <strong>БҮТЭЭГДЭХҮҮН</strong>
+        </h1>
+        <Image className={styles.logo} src={logo} alt="logo" />
       </div>
       <div className={styles.switch}>
         <button
@@ -36,13 +43,13 @@ function WebFeature() {
           onClick={() => setActive(4)}
           className={active === 4 ? styles.switcher_on : styles.switcher_off}
         >
-          Караоке
+          Гал тогоо удирдлага
         </button>
         <button
           onClick={() => setActive(5)}
           className={active === 5 ? styles.switcher_on : styles.switcher_off}
         >
-          Андройд Касс
+          Мобайл касс
         </button>
         <button
           onClick={() => setActive(6)}
@@ -109,7 +116,7 @@ function WebFeature() {
       )}
       {active === 5 && (
         <FeatureWeb
-          title={"Андройд Касс"}
+          title={"Мобайл касс"}
           description={"Захиалгыг боловсруулах систем"}
           longDescription={
             "Бэлэн мөнгөний систем нь биет бэлэн мөнгө, гарын авлагын бүртгэлийг ашиглан санхүүгийн гүйлгээ хийх, мөнгөний урсгалыг удирдах арга юм."

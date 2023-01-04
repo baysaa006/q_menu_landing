@@ -81,7 +81,11 @@ function PhoneFeature() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>Бүтээгдэхүүн </h3> <h1>Рестораны бүх шийдлийг нэг дороос</h1>
+        <h1 className={styles.headText}>
+          {" "}
+          Ресторан удирдлагын цогц систем
+          <br /> <strong>БҮТЭЭГДЭХҮҮН</strong>
+        </h1>{" "}
       </div>
       <ul className={styles.smallCon}>
         {data.map((item: any, index) => (

@@ -30,21 +30,25 @@
   flex-direction: column;
 }
 .text {
-  padding-top: 1vw;
+  padding-top: 1.4vw;
   font-size: 1.4vw;
-  height: 30vw;
-  width: 100%;
+  height: max-content;
+  width: 130%;
 }
 .Banner {
   width: 86%;
 }
 .slug {
-  width: 60%;
+  width: 50%;
 }
 .header {
   padding-left: 2vw;
 }
 .content {
+  background-position: 100% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../public/img/Mask.svg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,6 +57,9 @@
   background-color: var(--color);
   width: 95%;
   padding: 2vw;
+}
+.highlight {
+  font-weight: bold;
 }
 .right {
   z-index: 1;
@@ -72,8 +79,7 @@
   background-color: var(--inner_color);
   flex-direction: column;
   padding: 2vw;
-  height: 100%;
-  width: 95%;
+  width: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -94,7 +100,7 @@
 }
 .orderItemActive {
   font-size: 0.5vw !important;
-  width: 90%;
+  width: 93%;
   display: flex;
   flex-direction: row;
   gap: 1vw;
@@ -122,8 +128,7 @@
 .order {
   font-weight: bold;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   height: 80%;
 }
@@ -157,12 +162,13 @@
   width: 3vw;
 }
 .strong {
+  font-weight: bold;
   cursor: pointer;
 }
 .choose {
   right: 2vw;
   position: absolute;
-  bottom: 2vw;
+  bottom: 1vw;
   text-align: center;
   width: 8vw;
   border-radius: 2rem;
