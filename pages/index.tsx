@@ -48,9 +48,7 @@ export default function Home() {
       <div id="pricing" className={styles.pricing}>
         <Pricing />
       </div>
-      <div id="partners" className={styles.partners}>
-        <Partners />
-      </div>
+
       <div id="comment" className={styles.commment}>
         <Comment />
       </div>

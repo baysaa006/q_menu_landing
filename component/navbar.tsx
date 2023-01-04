@@ -23,17 +23,22 @@ export default function Navbar() {
               <h4>Бүтээгдэхүүн</h4>
             </a>
           </li>
-
+          <li>
+            <a href="/#" className={styles.drop_down_item}>
+              <h4>Шийдэл</h4>
+            </a>
+          </li>
           <li>
             <a href="#pricing" className={styles.drop_down_item}>
               <h4> Үнийн санал</h4>
             </a>
           </li>
           <li>
-            <a href="/#partners" className={styles.drop_down_item}>
-              <h4>Харилцагчид</h4>
+            <a href="/#" className={styles.drop_down_item}>
+              <h4>Мэдлэг</h4>
             </a>
           </li>
+
           <li>
             <a href="/#contact" className={styles.drop_down_item}>
               <h4>Холбоо барих</h4>
