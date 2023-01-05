@@ -24,6 +24,15 @@
   align-items: center;
   justify-content: center;
 }
+.down {
+  cursor: pointer;
+  font-weight: bold;
+}
+.rotate {
+  cursor: pointer;
+  font-weight: bold;
+  transform: rotate(180deg);
+}
 .notActiveCon {
   padding: 1rem;
   padding-right: 2rem;

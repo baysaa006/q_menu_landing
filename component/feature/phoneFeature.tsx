@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../../styles/feature/featurePhone.module.css";
 import Image from "next/image";
 import feature_1 from "../../public/img/feature_1.png";
+import downarrow from "../../public/icons/down.svg";
 
 function PhoneFeature() {
   const [active, setActive] = useState<any>([]);
@@ -100,7 +101,15 @@ function PhoneFeature() {
               }
             >
               <h1>{item.title}</h1>
-              {active.includes(index) ? <h1>-</h1> : <h1>+</h1>}
+              {
+                <Image
+                  className={
+                    active.includes(index) ? styles.rotate : styles.down
+                  }
+                  src={downarrow}
+                  alt="featurePicture"
+                />
+              }
             </div>
             {active.includes(index) && (
               <div className={styles.notActive}>

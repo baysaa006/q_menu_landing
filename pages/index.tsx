@@ -15,8 +15,8 @@ import Fag from "../component/fag";
 import useWindowDimensions from "../component/pricing/use_width";
 import WebFeature from "../component/feature/webFeature";
 import PhoneFeature from "../component/feature/phoneFeature";
+import Features from "../component/feature/features";
 export default function Home() {
-  const { width } = useWindowDimensions();
 
   const images = [main1, main2, main3];
   return (
@@ -35,14 +35,13 @@ export default function Home() {
       <div className={styles.slider}>
         <Slider imageList={images} />
       </div>
-      <div className={styles.hero}>
+      <div id="solution" className={styles.hero}>
         <Hero />
       </div>
       <div id="features" className={styles.features}>
-        {width > 900 && <WebFeature />}
-        {width < 900 && <PhoneFeature />}
+        <Features />
       </div>
-      <div className={styles.dash}>
+      <div id="" className={styles.dash}>
         <Dashboard />
       </div>
       <div id="pricing" className={styles.pricing}>

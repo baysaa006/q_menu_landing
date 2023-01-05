@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/fag.module.css";
+import downarrow from "../public/icons/down.svg";
+import Image from "next/image";
 
 export default function Fag() {
   const [down, setDown] = useState({
@@ -31,7 +33,11 @@ export default function Fag() {
         >
           <div className={styles.upper}>
             <h1 className={styles.header}>Q-Menu гэж юу вэ?</h1>
-            <h1 className={down.first ? styles.rotate : styles.down}>+</h1>
+            <Image
+              src={downarrow}
+              alt="down"
+              className={down.first ? styles.rotate : styles.down}
+            />
           </div>
           <p className={down.first ? styles.show : styles.lower}>
             Ресторан, бар, зочид буудал, амралтын газруудад зориулсан дижитал
@@ -56,7 +62,11 @@ export default function Fag() {
         >
           <div className={styles.upper}>
             <h1 className={styles.header}>Кассын системтэй юу?</h1>
-            <h1 className={down.second ? styles.rotate : styles.down}>+</h1>
+            <Image
+              src={downarrow}
+              alt="down"
+              className={down.second ? styles.rotate : styles.down}
+            />
           </div>
           <p className={down.second ? styles.show : styles.lower}>
             Рестораны кассын програмыг сайжруулан боловсруулсан системтэй.
@@ -80,7 +90,11 @@ export default function Fag() {
         >
           <div className={styles.upper}>
             <h1 className={styles.header}>Таблет меню байгаа юу? </h1>
-            <h1 className={down.third ? styles.rotate : styles.down}>+</h1>
+            <Image
+              src={downarrow}
+              alt="down"
+              className={down.third ? styles.rotate : styles.down}
+            />{" "}
           </div>
           <p className={down.third ? styles.show : styles.lower}>
             Байгууллага хүсвэл рестораны ширээ бүр дээр таблет меню байрлуулж
@@ -103,7 +117,11 @@ export default function Fag() {
         >
           <div className={styles.upper}>
             <h1 className={styles.header}>Хэрхэн харилцагч болох вэ?</h1>
-            <h1 className={down.fourth ? styles.rotate : styles.down}>+</h1>
+            <Image
+              src={downarrow}
+              alt="down"
+              className={down.fourth ? styles.rotate : styles.down}
+            />{" "}
           </div>
           <p className={down.fourth ? styles.show : styles.lower}>
             77772040 info@qmenu.mn имэйл хаягаар бидэнтэй холбогдож гэрээ

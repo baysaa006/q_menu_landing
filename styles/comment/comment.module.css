@@ -1,10 +1,10 @@
-.carousel__wrapper {
+.container {
   display: flex;
-  /*justify-content: center;*/
-  align-items: center;
-  width: calc(var(--slides-in-view-com) * var(--slide-width_com));
-  overflow: hidden;
-  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid var(--main_color);
+  justify-content: center;
+  padding: 2rem;
 }
 .header {
   padding-bottom: 2rem;
@@ -12,37 +12,96 @@
   flex-direction: column;
   align-items: center;
 }
-
-.carousel {
-  border-top: 1px solid var(--main_color);
-  padding: 100px 0;
-  overflow: hidden;
-  width: calc(2 * var(--no-of-slides));
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  justify-content: center;
+  position: relative;
 }
-
-.carousel__slide {
-  animation: scroll var(--iteration-time) linear infinite;
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
+.right {
+  width: 50%;
+}
+.speech {
+  font-style: italic;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  flex: 0 0 auto;
-  width: var(--slide-width_com);
-  height: var(--slide-height_com);
-  box-sizing: border-box;
-  /*border: 1px dotted darkblue;*/
+  align-items: flex-start;
+  justify-content: space-around;
 }
-
-.carousel__image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50%;
-  margin: 15px 20px;
+.commentImg {
+  border-radius: 2rem;
 }
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+.arrow:hover {
+  background-color: var(--color);
+}
+.arrow1:hover {
+  background-color: var(--color);
+}
+.arrow {
+  height: 4vw;
+  width: 4vw;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--main_color);
+}
+.arrow1 {
+  height: 4vw;
+  width: 4vw;
+  padding: 0.5rem;
+  transform: rotate(180deg);
+  border-radius: 2rem;
+  border: 2px solid var(--main_color);
+}
+.buttons {
+  color: var(--main_color);
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  bottom: 2vw;
+  position: absolute;
+  right: 15vw;
+}
+@media screen and (max-width: 1100px) {
+  .left {
+    align-items: center;
+    width: 80%;
   }
-  100% {
-    transform: translateX(calc(var(--slide-width) * var(--no-of-slides) * -1));
+  .speech {
+    font-size: 3vw !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .left {
+    width: 100%;
+  }
+  .cardContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .buttons {
+    right: 40%;
+    bottom: -3vw;
+  }
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .arrow1 {
+    width: 40px;
+    height: 40px;
   }
 }

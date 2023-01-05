@@ -1,106 +1,99 @@
-import React from "react";
-import Comments_card from "./comments_card";
+import React, { useState } from "react";
 import styles from "../../styles/comment/comment.module.css";
-import partner1 from "../../public/img/partners1.jpg";
-import partner2 from "../../public/img/partners2.jpg";
-import partner3 from "../../public/img/partners3.jpg";
-import partner4 from "../../public/img/partners4.jpg";
-import partner5 from "../../public/img/partners5.jpg";
-import partner6 from "../../public/img/partners6.jpg";
-import partner7 from "../../public/img/partners7.jpg";
+import comment1 from "../../public/img/comment1.jpg";
+import comment2 from "../../public/img/comment2.jpg";
+import comment3 from "../../public/img/comment3.jpg";
+import nextbutton from "../../public/icons/next_arrow.svg";
+import prevbutton from "../../public/icons/next_arrow.svg";
+
+import Image from "next/image";
+
 export default function Comment() {
+  const data: any = [
+    {
+      img: comment1,
+      speech:
+        "Орчин үеийн технологийн давуу талыг мэдрүүлж илуу хурдан шуурхай үйлчилгээг хэрэглэгчдэдээ хүргэж чадсан.",
+      title: "Шангрила-FoodStudio захирал",
+      name: "Л.Буняжаргал",
+    },
+    {
+      img: comment2,
+      speech:
+        "Үйлчилгээний ажилчдын маань ажлыг 2 дахин хөнгөвчилсөн хэн хэндээ хялбар шийдэл байлаа. ",
+      title: "Gate 4-захирал",
+      name: "П.Мөнхсайхан",
+    },
+    {
+      img: comment3,
+      speech:
+        "Q Menu кассын системийг суурилуулсан өдрөөсөө л манай кассын ачааллыг 50 хувь бууруулж чадсан.",
+      title: "УИД - New York Empire захирал",
+      name: "Ц.Цолмон",
+    },
+  ];
+  const [active, setActive] = useState<any>([1]);
+  const next = (item: any) => {
+    console.log(active.length);
+    if (item == 2) {
+      setActive(0);
+    } else setActive(item + 1);
+  };
+  const prev = (item: any) => {
+    if (item == 0) {
+      setActive(2);
+    } else setActive(item - 1);
+  };
   return (
-    <section className={styles.carousel}>
-      <div className={styles.container_fluid}>
-        <div className={styles.row}>
-          <div className={styles.header}>
-            <h3>Хамтрагчидийн сэтгэгдэл</h3>
-            <h1>Бидний талаар</h1>
-          </div>
-          <div className={styles.col_12}>
-            <div className={styles.carousel__wrapper}>
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"DAO"}
-                    description={""}
-                    photo={partner1}
-                  />{" "}
-                </div>
-              </div>
-
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"BLUEFIN"}
-                    description={""}
-                    photo={partner2}
-                  />{" "}
-                </div>
-              </div>
-
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"THE BLUE SKY"}
-                    description={""}
-                    photo={partner3}
-                  />{" "}
-                </div>
-              </div>
-
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"Улаанбаатал зочид буудал"}
-                    description={""}
-                    photo={partner4}
-                  />{" "}
-                </div>
-              </div>
-
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"GAN"}
-                    description={""}
-                    photo={partner5}
-                  />{" "}
-                </div>
-              </div>
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"GAN"}
-                    description={""}
-                    photo={partner6}
-                  />{" "}
-                </div>
-              </div>
-              <div className={styles.carousel__slide}>
-                <div className={styles.carousel__image}>
-                  {" "}
-                  <Comments_card
-                    title={"Гайхалтай шийдэл"}
-                    name={"GAN"}
-                    description={""}
-                    photo={partner7}
-                  />{" "}
-                </div>
-              </div>
-            </div>
-          </div>
+    <section className={styles.container}>
+      <div className={styles.row}>
+        <div className={styles.header}>
+          <h3>Хамтрагчидийн сэтгэгдэл</h3>
+          <h1>Бидний талаар</h1>
+        </div>
+        <div className={styles.content}>
+          {data.map((item: any, index: number) => (
+            <>
+              {active == index && (
+                <>
+                  <li key={index} className={styles.cardContainer}>
+                    <div className={styles.right}>
+                      <Image
+                        className={styles.commentImg}
+                        src={item.img}
+                        alt="pro"
+                      />
+                    </div>
+                    <div className={styles.left}>
+                      <div>
+                        <h1 className={styles.speech}>"{item.speech}"</h1>
+                      </div>
+                      <div>
+                        <h1>{item.name}</h1>
+                        <h4>{item.title}</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <div className={styles.buttons}>
+                    <button onClick={() => prev(index)}>
+                      <Image
+                        className={styles.arrow1}
+                        src={prevbutton}
+                        alt="prev"
+                      />
+                    </button>
+                    <button onClick={() => next(index)}>
+                      <Image
+                        className={styles.arrow}
+                        src={nextbutton}
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </>
+              )}
+            </>
+          ))}
         </div>
       </div>
     </section>

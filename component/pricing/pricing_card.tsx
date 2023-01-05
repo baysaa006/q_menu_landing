@@ -9,7 +9,6 @@ interface data {
   price: string;
   name: string;
   benefit4: string;
-
   benefit1: string;
   benefit2: string;
   benefit3: string;
@@ -30,13 +29,15 @@ export default function Pricing_card(props: data) {
   return (
     <div className={styles.container}>
       <h3>{name}</h3>
-      <h4>{}</h4>
       <div className={styles.customs}>
         <h1>₮{price}</h1>
       </div>
       <a href="tel:+(976)77772040" className={styles.call}>
-        <Phone />
-        Холбогдох
+        <i className={styles.callbutton}>
+          {" "}
+          <Phone />
+        </i>
+        <h4>Холбогдох</h4>
       </a>
       <div className={styles.details}>
         {" "}

@@ -7,6 +7,7 @@ import Contact_loader from "./contact_loader";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
+  const [test, setTest] = useState("");
   const [sent, setSent] = useState(false);
   const [email, setEmail] = useState({
     userName: "",

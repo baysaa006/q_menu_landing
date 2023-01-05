@@ -38,7 +38,7 @@ function HighlightText(props: { text: any; highlight: any[] }) {
   );
 }
 export default function Hero() {
-  const [active, setActive] = useState<any>([]);
+  const [active, setActive] = useState<any>([0]);
 
   const col = [
     {

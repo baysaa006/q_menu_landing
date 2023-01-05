@@ -8,6 +8,16 @@
   width: calc(50%-65px);
   background-color: var(--main_color);
 }
+
+.call {
+  font-size: 2vw;
+  border-radius: 2rem;
+  padding-right: 2rem;
+  background-color: var(--color);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
 .details {
   margin-top: 1rem;
 }

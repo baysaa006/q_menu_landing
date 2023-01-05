@@ -24,12 +24,12 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/#" className={styles.drop_down_item}>
+            <a href="/#solution" className={styles.drop_down_item}>
               <h4>Шийдэл</h4>
             </a>
           </li>
           <li>
-            <a href="#pricing" className={styles.drop_down_item}>
+            <a href="/#pricing" className={styles.drop_down_item}>
               <h4> Үнийн санал</h4>
             </a>
           </li>
@@ -38,14 +38,12 @@ export default function Navbar() {
               <h4>Мэдлэг</h4>
             </a>
           </li>
-
           <li>
             <a href="/#contact" className={styles.drop_down_item}>
               <h4>Холбоо барих</h4>
             </a>
           </li>
           <li>
-            {" "}
             <a href="/#fag" className={styles.drop_down_item}>
               <h4>Асуулт хариулт</h4>
             </a>
@@ -105,6 +103,17 @@ export default function Navbar() {
                   onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
                   }}
+                  href="/#solution"
+                >
+                  {" "}
+                  <h4 className={styles.expanded_text}>Шийдэл</h4>
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
                   href="/pricing"
                 >
                   {" "}
@@ -116,10 +125,32 @@ export default function Navbar() {
                   onClick={() => {
                     setIsNavExpanded(!isNavExpanded);
                   }}
+                  href="/#pricing"
+                >
+                  {" "}
+                  <h4 className={styles.expanded_text}>Мэдлэг</h4>
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
                   href="/#contact"
                 >
                   {" "}
                   <h4 className={styles.expanded_text}>Холбоо барих</h4>
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={() => {
+                    setIsNavExpanded(!isNavExpanded);
+                  }}
+                  href="/#fag"
+                >
+                  {" "}
+                  <h4 className={styles.expanded_text}>Асуулт хариулт</h4>
                 </a>
               </li>
               <li>
