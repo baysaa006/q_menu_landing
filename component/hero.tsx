@@ -26,9 +26,9 @@ function HighlightText(props: { text: any; highlight: any[] }) {
 
   return (
     <>
-      {words?.map((word: any) => {
+      {words?.map((word: any, index: any) => {
         if (highlight.includes(word)) {
-          return <strong>{" " + word}</strong>;
+          return <strong key={index}>{" " + word}</strong>;
         } else if (highlight.includes(word)) {
         } else {
           return " " + word;
@@ -38,8 +38,7 @@ function HighlightText(props: { text: any; highlight: any[] }) {
   );
 }
 export default function Hero() {
-  const [active, setActive] = useState<any>([0]);
-
+  const [active, setActive] = useState<any>([-1]);
   const col = [
     {
       img: icon1,
@@ -224,7 +223,7 @@ export default function Hero() {
 
   function handleOpenClose(item: any) {
     if (active.includes(item)) {
-      setActive([]);
+      setActive([-1]);
     } else {
       setActive([item]);
     }
@@ -232,7 +231,7 @@ export default function Hero() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
+      <div className={active.includes(-1) ? styles.content : styles.content1}>
         <div className={styles.header}>
           <h2 className={styles.headerText}>
             Та ямар төрлийн бизнес эрхэлдэг вэ?{" "}
@@ -272,6 +271,15 @@ export default function Hero() {
           </div>
           <div className={styles.left}>
             <div className={styles.slug}>
+              {active.includes(-1) && (
+                <>
+                  <h2 className={styles.pic}>
+                    Таны эрхэлж буй бизнест яг тохирсон
+                    <br /> <strong>ШИЙДЛИЙГ</strong> бид санал болгоно
+                  </h2>
+                  <Image className={styles.Banner} src={Banner} alt="" />
+                </>
+              )}
               {col.map((item: any, index) => (
                 <>
                   {active.includes(index) && (
@@ -299,12 +307,21 @@ export default function Hero() {
                           highlight={item.highlight}
                         />
                       </p>
+                      {active.includes(index) && (
+                        <>
+                          {" "}
+                          <button className={styles.choose}>
+                            {" "}
+                            <h4>Сонгох</h4>
+                          </button>
+                        </>
+                      )}
                     </>
                   )}
                 </>
               ))}
             </div>
-            <button className={styles.choose}>Сонгох</button>
+            {active.includes(-1) && <></>}
           </div>
         </div>
         <div className={styles.footer}>

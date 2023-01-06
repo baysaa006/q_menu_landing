@@ -59,6 +59,8 @@ const Slider = ({
   return (
     <div>
       <div className={styles.wrapper} style={{ backgroundColor: bgColor }}>
+        <div className={styles.divider}></div>
+
         {((showArrowControls && !loop && active !== 0) ||
           (showArrowControls && loop)) && (
           <div className={styles.leftClick} onClick={leftClickHandle}>
@@ -66,40 +68,29 @@ const Slider = ({
           </div>
         )}
         {active === 0 && (
-          <h4 className={styles.main1}>
-            Зочлох үйлчилгээний салбарын <br /> ЦАХИМ ШИЛЖИЛТИЙГ
+          <h2 className={styles.main1}>
+            Зочлох үйлчилгээний салбарын <br />
+            <strong className={styles.vold}>ЦАХИМ ШИЛЖИЛТИЙГ</strong>
             <br /> удирдах ЦОГЦ СИСТЕМ
-          </h4>
+          </h2>
         )}
         {active === 1 && (
           <h4 className={styles.main1}>
             Цаасан меню шаардлагагүй
-            <br /> ЗАЙНААС ЗАХИАЛЖ ЗАЙНААС ТӨЛЬЕ!
+            <br /> <strong>ЗАЙНААС ЗАХИАЛЖ, ЗАЙНААС ТӨЛЬЕ</strong>
           </h4>
         )}
         {active === 2 && (
           <h4 className={styles.main1}>
-            -{">"} УРЬДЧИЛСАН ЗАХИАЛГА
-            <br />-{">"} ШИРЭЭ ЗАХИАЛГА
-            <br />-{">"} ХҮРГЭЛТ
-            <br />
-            ТАНЫГ ОЧИХОД ЗАХИАЛСАН
-            <br />
-            ХООЛ ТАНЬ БЭЛЭН БАЙНА
+            Бүх асуудлыг<strong> ГАНЦ ШИЙДЛЭЭР</strong>{" "}
           </h4>
         )}
-        {active === 3 && (
-          <h4 className={styles.main1}>
-            Ресторан, Паб, Караоке
-            <br />
-            БҮХ АСУУДЛЫГ ганц ШИЙДЛЭЭР
-          </h4>
-        )}
+
         <Image className={styles.images} src={imageList[active]} alt="image" />
         {((showArrowControls && !loop && active !== imageList.length - 1) ||
           (showArrowControls && loop)) && (
           <div className={styles.rightClick} onClick={rightClickHandle}>
-            <Image className={styles.button} src={nextButton} alt="next" />
+            <Image className={styles.button} src={backButton} alt="back" />
           </div>
         )}
       </div>

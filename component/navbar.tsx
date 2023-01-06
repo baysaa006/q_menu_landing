@@ -18,16 +18,17 @@ export default function Navbar() {
       </div>
       <div className={styles.navs}>
         <ul className={styles.drop_down}>
-          <li className={styles.drop_down_feuture}>
-            <a href="/#features">
-              <h4>Бүтээгдэхүүн</h4>
-            </a>
-          </li>
           <li>
             <a href="/#solution" className={styles.drop_down_item}>
               <h4>Шийдэл</h4>
             </a>
           </li>
+          <li className={styles.drop_down_feuture}>
+            <a href="/#features">
+              <h4>Бүтээгдэхүүн</h4>
+            </a>
+          </li>
+
           <li>
             <a href="/#pricing" className={styles.drop_down_item}>
               <h4> Үнийн санал</h4>
@@ -52,10 +53,10 @@ export default function Navbar() {
       </div>
       <div className={styles.buttons}>
         <button className={styles.button_sign_in}>
-          <h2 className={styles.text}>Нэвтрэх</h2>
+          <h4 className={styles.text}>Нэвтрэх</h4>
         </button>
         <button className={styles.button_sign_up}>
-          <h2 className={styles.text}>Бүртгүүлэх</h2>
+          <h4 className={styles.text}>Бүртгүүлэх</h4>
         </button>
       </div>
       {!isNavExpanded && (

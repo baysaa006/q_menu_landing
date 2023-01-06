@@ -95,7 +95,7 @@
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
   .expanded_text_button {
     font-weight: bold;
     font-size: large;

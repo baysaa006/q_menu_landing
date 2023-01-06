@@ -1,9 +1,9 @@
 import Hero from "../component/hero";
 import styles from "../styles/Home.module.css";
 import Slider from "../component/image_slider";
-import main1 from "../public/img/main1.jpg";
-import main2 from "../public/img/main2.jpg";
-import main3 from "../public/img/main3.jpg";
+import main1 from "../public/img/1.svg";
+import main2 from "../public/img/2.svg";
+import main3 from "../public/img/3.svg";
 import main4 from "../public/img/main4.jpg";
 import Dashboard from "../component/dashboard";
 import Pricing from "../component/pricing/pricing";
@@ -17,7 +17,6 @@ import WebFeature from "../component/feature/webFeature";
 import PhoneFeature from "../component/feature/phoneFeature";
 import Features from "../component/feature/features";
 export default function Home() {
-
   const images = [main1, main2, main3];
   return (
     <>
