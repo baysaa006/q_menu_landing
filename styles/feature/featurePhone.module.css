@@ -6,13 +6,12 @@
   justify-content: center;
   align-items: center;
   height: max-content;
-  gap: 2rem;
-  padding-top: 2rem;
+  gap: 1rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 .con {
   margin-bottom: 1rem;
-  margin-top: 0.8rem;
 }
 .smallCon {
   width: 80%;
@@ -34,7 +33,7 @@
   transform: rotate(180deg);
 }
 .notActiveCon {
-  padding: 1rem;
+  padding: 0.5em;
   padding-right: 2rem;
   padding-left: 2rem;
   width: 100%;
@@ -47,8 +46,8 @@
   background-color: var(--button_color);
 }
 .activeCon {
+  padding: 0.5em;
   background-color: var(--main_color);
-  padding: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
   width: 100%;

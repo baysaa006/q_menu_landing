@@ -57,16 +57,15 @@ const Slider = ({
   }, [active]);
 
   return (
-    <div>
+    <div className={styles.con}>
       <div className={styles.wrapper} style={{ backgroundColor: bgColor }}>
-        <div className={styles.divider}></div>
-
         {((showArrowControls && !loop && active !== 0) ||
           (showArrowControls && loop)) && (
           <div className={styles.leftClick} onClick={leftClickHandle}>
             <Image className={styles.button} src={backButton} alt="back" />
           </div>
         )}
+        <div className={styles.divider}></div>
         {active === 0 && (
           <h2 className={styles.main1}>
             Зочлох үйлчилгээний салбарын <br />
@@ -75,13 +74,13 @@ const Slider = ({
           </h2>
         )}
         {active === 1 && (
-          <h4 className={styles.main1}>
+          <h4 className={styles.main3}>
             Цаасан меню шаардлагагүй
             <br /> <strong>ЗАЙНААС ЗАХИАЛЖ, ЗАЙНААС ТӨЛЬЕ</strong>
           </h4>
         )}
         {active === 2 && (
-          <h4 className={styles.main1}>
+          <h4 className={styles.main2}>
             Бүх асуудлыг<strong> ГАНЦ ШИЙДЛЭЭР</strong>{" "}
           </h4>
         )}

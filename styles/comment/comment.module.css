@@ -31,7 +31,9 @@
   width: 50%;
 }
 .speech {
-  font-style: italic;
+  padding-top: 2vw;
+  font-size: 2.5vw !important;
+  /* font-style: italic; */
 }
 .left {
   width: 60%;
@@ -86,7 +88,10 @@
 }
 @media screen and (max-width: 900px) {
   .left {
-    width: 100%;
+    width: 110%;
+  }
+  .right {
+    width: 75%;
   }
   .cardContainer {
     width: 100%;

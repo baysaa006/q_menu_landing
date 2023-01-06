@@ -18,6 +18,9 @@ import gift from "../public/img/gift.svg";
 
 import Banner from "../public/img/Banner.svg";
 import router from "next/router";
+import Draggable from "react-draggable";
+import useWindowDimensions from "./pricing/use_width";
+import Hand from "./animations/hand";
 
 function HighlightText(props: { text: any; highlight: any[] }) {
   const { text, highlight } = props;
@@ -220,6 +223,7 @@ export default function Hero() {
         "Qmenu орчин үеийн технологийн шийдэл ашиглан асуудлыг хялбар шийдлээ",
     },
   ];
+  const { width } = useWindowDimensions();
 
   function handleOpenClose(item: any) {
     if (active.includes(item)) {
@@ -269,7 +273,10 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className={styles.left}>
+
+          <div
+            className={active.includes(-1) ? styles.notActiveLeft : styles.left}
+          >
             <div className={styles.slug}>
               {active.includes(-1) && (
                 <>
@@ -282,13 +289,29 @@ export default function Hero() {
               )}
               {col.map((item: any, index) => (
                 <>
-                  {active.includes(index) && (
-                    <>
-                      <Image
-                        className={styles.itemTop}
-                        src={item.img}
-                        alt="image"
-                      />
+                  {active.includes(index) ? (
+                    <div key={index}>
+                      {width > 900 && (
+                        <Image
+                          className={styles.itemTop}
+                          src={item.img}
+                          alt="image"
+                        />
+                      )}
+                      {width < 900 && (
+                        <svg
+                          className={styles.close}
+                          onClick={() => {
+                            setActive([-1]);
+                          }}
+                          width={15}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512"
+                        >
+                          <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+                        </svg>
+                      )}
+
                       <p className={styles.text}>
                         <HighlightText
                           text={item.description_1}
@@ -316,7 +339,9 @@ export default function Hero() {
                           </button>
                         </>
                       )}
-                    </>
+                    </div>
+                  ) : (
+                    <></>
                   )}
                 </>
               ))}

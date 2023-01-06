@@ -85,7 +85,7 @@ export default function Footer() {
             <Image className={styles.social_logo} src={link} alt="" />
           </li>
         </ul>
-        <h2>© 2022 Q-Menu, LLC.</h2>
+        <h2>© 2023 Qmenu, LLC.</h2>
       </div>
     </div>
   );

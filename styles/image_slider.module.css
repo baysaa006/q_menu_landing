@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.con {
+  position: relative;
+}
 .wrapper {
   transition: opacity 500ms ease 0s, visibility 500ms ease 0s;
   position: relative;
@@ -22,7 +25,7 @@
   filter: invert(100%);
 }
 .divider {
-  top: 20%;
+  top: calc(20%);
   left: 8vw;
   position: absolute;
   z-index: 20;
@@ -32,10 +35,28 @@
 }
 .main1 {
   font-size: 1.5vw;
-  line-height: 2.5vw;
+  line-height: 2rem;
+  text-align: start;
+  left: calc(15% - 20px);
+  top: calc(42% - 20px);
+  position: absolute;
+  color: var(--text_color);
+}
+.main2 {
+  font-size: 1.5vw;
+  line-height: 2rem;
   text-align: start;
   left: calc(15% - 20px);
   top: calc(50% - 20px);
+  position: absolute;
+  color: var(--text_color);
+}
+.main3 {
+  font-size: 1.5vw;
+  line-height: 2rem;
+  text-align: start;
+  left: calc(15% - 20px);
+  top: calc(45% - 20px);
   position: absolute;
   color: var(--text_color);
 }
@@ -73,7 +94,9 @@
 }
 
 .dots {
-  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 44%;
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -108,16 +131,35 @@
   object-fit: cover;
 }
 @media screen and (max-width: 600px) {
+  .wrapper {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divider {
+    left: 13vw;
+    top: calc(38%);
+  }
+  .main1 {
+    left: 19vw;
+    font-size: 4vw;
+  }
+  .main2 {
+    left: 15vw;
+    font-size: 4vw;
+  }
+  .main3 {
+    left: 15vw;
+    font-size: 4vw;
+  }
   .images {
-    height: 50vh;
+    height: 40vh;
   }
   .button {
     width: 25px;
     height: 25px;
-  }
-  .main1 {
-    font-size: small;
-    left: calc(15% - 20px);
-    top: calc(30% - 20px);
   }
 }
