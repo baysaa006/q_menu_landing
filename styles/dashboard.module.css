@@ -16,6 +16,9 @@
   flex-direction: column;
   align-items: flex-end;
 }
+.order {
+  list-style: disc;
+}
 .divider {
   top: 3rem;
   right: 2rem;
@@ -37,12 +40,13 @@
   flex-direction: row;
 }
 .small_con .left {
-  gap: 16px;
+  padding-right: 2vw;
+  gap: 1vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  width: 40%;
+  width: 50%;
 }
 
 .container .small_con .left .row {
@@ -93,10 +97,26 @@
   .container {
     align-items: center;
   }
+  .small_con {
+    gap: 10px;
+  }
+  .qr {
+    right: 22%;
+    width: 30vw;
+    top: 67%;
+  }
+  .container .header {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .headText {
+    font-size: 4vw;
+    text-align: center;
+  }
   .small_con .left {
     width: 100%;
   }
   .small_con .right {
-    height: 60vh;
+    height: max-content;
   }
 }

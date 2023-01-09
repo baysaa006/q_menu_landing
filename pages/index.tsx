@@ -43,6 +43,9 @@ export default function Home() {
       <div id="" className={styles.dash}>
         <Dashboard />
       </div>
+      <div>
+        <Partners />
+      </div>
       <div id="pricing" className={styles.pricing}>
         <Pricing />
       </div>
