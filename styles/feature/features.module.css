@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid var(--main_color);
   padding: 2rem;
-  padding-top: 4rem;
-  background-position: 80% 15%;
+  padding-top: 2rem;
+  background-position: 97%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/public/img/Banner.svg);
+  background-image: url(../../public/img/Pattern.svg);
 }
+
 .wrap {
   position: relative;
   height: max-content;
@@ -81,13 +81,15 @@
 .switcher_off {
   border-radius: 2rem;
   width: 15vw;
-  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .switcher_on {
   border-radius: 2rem;
   background-color: var(--color);
   width: 15vw;
-  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 @media screen and (max-width: 865px) {
   .small_con {

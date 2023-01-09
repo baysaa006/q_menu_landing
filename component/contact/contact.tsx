@@ -4,6 +4,7 @@ import styles from "../../styles/contact/contact.module.css";
 import img from "../../public/img/contact.svg";
 import Contact_sent from "./contact_sent";
 import Contact_loader from "./contact_loader";
+import Fag from "../fag";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -29,13 +30,12 @@ export default function Contact() {
   // };
   return (
     <div className={styles.container}>
-      <h1>Бидэнтэй холбогдоорой</h1>
       <div className={styles.main}>
         <div className={styles.img}>
-          <Image src={img} alt="Холбогдох" />
+          <Fag />
         </div>
         <form className={styles.form}>
-          {" "}
+          <h1>Бидэнтэй холбогдоорой</h1>
           <input
             className={styles.input}
             type="text"
@@ -88,13 +88,9 @@ export default function Contact() {
             data-error-message="Та мэссэжээ оруулана уу!"
           />
           {sent && <Contact_sent />}
-          <input
-            disabled
-            aria-label="send"
-            onClick={send}
-            value="Илгээх"
-            className={styles.button}
-          />
+          <button disabled onClick={send} className={styles.button}>
+            Илгээх
+          </button>
         </form>
       </div>
     </div>

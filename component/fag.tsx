@@ -15,7 +15,6 @@ export default function Fag() {
   };
   return (
     <div className={styles.container}>
-      <h3>Асуулт,хариулт</h3>
       <h1>Нийтлэг асуултууд болон хариултууд</h1>
       <div className={styles.small_con}>
         <div

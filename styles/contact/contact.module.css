@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: max-content;
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -9,9 +8,14 @@
   border-bottom: none;
   position: relative;
 }
-
+.img {
+  width: 50%;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
 .main {
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   padding: 1rem;
   display: flex;
@@ -43,12 +47,11 @@
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
   width: max-content;
   gap: 16px;
   font-size: 1.5vw;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
   padding-right: 1rem;
   padding-left: 1rem;
   border-radius: 2rem;
@@ -64,9 +67,12 @@
     font-size: 2vw;
   }
   .img {
-    width: 80%;
+    width: 100%;
   }
   .main {
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     flex-direction: column;
   }

@@ -1,11 +1,25 @@
 .container {
-  border-top: 1px solid var(--main_color);
   display: flex;
   flex-direction: column;
   padding: 2rem;
   height: max-content;
   gap: 1rem;
+  position: relative;
   padding-top: 3.3rem;
+}
+.head {
+  padding-left: 2rem;
+}
+.headText {
+  text-align: left;
+}
+.divider {
+  top: 3rem;
+  left: 2rem;
+  position: absolute;
+  height: 86%;
+  width: 5px;
+  background-color: var(--color);
 }
 .switch {
   width: max-content;
@@ -39,9 +53,54 @@
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
-
-@media screen and (max-width: 865px) {
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.featureText {
+  width: 95%;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #7d7d7d;
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.prices {
+  font-weight: bold;
+}
+.featurePrice {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerDiv {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+.moreFeatureHead {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.circle {
+  background-color: var(--color);
+}
+.moreFeature {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
   .main {
+    gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
   .switch {
@@ -57,5 +116,19 @@
 @media screen and (max-width: 565px) {
   .main {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .circle {
+    width: 35px;
+    height: 35px;
+  }
+  .featureText {
+    padding: 1rem;
+    width: 80%;
+  }
+  .moreFeatureHead {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
   }
 }

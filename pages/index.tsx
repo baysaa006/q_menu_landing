@@ -56,9 +56,6 @@ export default function Home() {
       <div id="contact">
         <Contact />
       </div>
-      <div id="fag" className={styles.commment}>
-        <Fag />
-      </div>
     </>
   );
 }

@@ -1,11 +1,11 @@
 .container {
-  padding-top: 3.5rem;
   padding-bottom: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: max-content;
 }
 .small_con {
   padding-top: 2rem;
@@ -64,9 +64,12 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.header {
+  font-size: x-large;
+}
 @media screen and (max-width: 600px) {
   .col {
-    width: 80%;
+    width: 100%;
   }
   .header {
     font-size: medium;

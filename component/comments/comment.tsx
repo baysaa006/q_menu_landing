@@ -45,57 +45,55 @@ export default function Comment() {
     } else setActive(item - 1);
   };
   return (
-    <section className={styles.container}>
-      <div className={styles.row}>
-        <div className={styles.header}>
-          <h3>Хамтрагчидийн сэтгэгдэл</h3>
-          <h1>Бидний талаар</h1>
-        </div>
-        <div className={styles.content}>
-          {data.map((item: any, index: number) => (
-            <>
-              {active == index && (
-                <>
-                  <li key={index} className={styles.cardContainer}>
-                    <div className={styles.right}>
-                      <Image
-                        className={styles.commentImg}
-                        src={item.img}
-                        alt="pro"
-                      />
-                    </div>
-                    <div className={styles.left}>
-                      <div>
-                        <h1 className={styles.speech}>"{item.speech}"</h1>
+    <div className={styles.con}>
+      <div className={styles.container}>
+        <div className={styles.row}>
+          <div className={styles.content}>
+            {data.map((item: any, index: number) => (
+              <>
+                {active == index && (
+                  <>
+                    <li key={index} className={styles.cardContainer}>
+                      <div className={styles.right}>
+                        <Image
+                          className={styles.commentImg}
+                          src={item.img}
+                          alt="pro"
+                        />
                       </div>
-                      <div>
-                        <h1>{item.name}</h1>
-                        <h4>{item.title}</h4>
+                      <div className={styles.left}>
+                        <div>
+                          <h1 className={styles.speech}>"{item.speech}"</h1>
+                        </div>
+                        <div>
+                          <h1>{item.name}</h1>
+                          <h4>{item.title}</h4>
+                        </div>
                       </div>
+                    </li>
+                    <div className={styles.buttons}>
+                      <button onClick={() => prev(index)}>
+                        <Image
+                          className={styles.arrow1}
+                          src={prevbutton}
+                          alt="prev"
+                        />
+                      </button>
+                      <button onClick={() => next(index)}>
+                        <Image
+                          className={styles.arrow}
+                          src={nextbutton}
+                          alt="next"
+                        />
+                      </button>
                     </div>
-                  </li>
-                  <div className={styles.buttons}>
-                    <button onClick={() => prev(index)}>
-                      <Image
-                        className={styles.arrow1}
-                        src={prevbutton}
-                        alt="prev"
-                      />
-                    </button>
-                    <button onClick={() => next(index)}>
-                      <Image
-                        className={styles.arrow}
-                        src={nextbutton}
-                        alt="next"
-                      />
-                    </button>
-                  </div>
-                </>
-              )}
-            </>
-          ))}
+                  </>
+                )}
+              </>
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

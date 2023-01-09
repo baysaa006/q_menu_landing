@@ -1,10 +1,16 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  border-top: 1px solid var(--main_color);
-  justify-content: center;
+  width: 95%;
   padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--color);
+}
+
+.con {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .header {
   padding-bottom: 2rem;

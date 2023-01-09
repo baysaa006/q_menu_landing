@@ -8,14 +8,18 @@
 }
 @font-face {
   font-family: "RobotoCondensed";
+  src: url("../public/fonts/RobotoCondensed-Light.ttf");
+  font-weight: thin;
+}
+@font-face {
+  font-family: "RobotoCondensed";
   src: url("../public/fonts/RobotoCondensed-Bold.ttf");
   font-weight: bold;
 }
 :root {
   --color: #fee600;
-  --special_text: #ff4d4d;
   --button_color: #fee600;
-  --main_color: #d9d9d9;
+  --main_color: #f7f7f7;
   --text_color: #2d2d34;
   --inner_color: #fff;
   --background_color: #fff;
@@ -54,7 +58,7 @@ h4 {
 }
 h1 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.4vw;
   color: var(--text_color);
 }
 h2 {

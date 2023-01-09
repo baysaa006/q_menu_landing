@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "../../styles/feature/features.module.css";
 import feature_1 from "../../public/img/feature_1.png";
 import feature_2 from "../../public/img/feature_2.png";
-import logo from "../../public/img/logo.png";
 import Image from "next/image";
 import Code from "../animations/code";
 import FeatureWeb from "./featureWebCard";
@@ -18,7 +17,6 @@ function WebFeature() {
           Ресторан удирдлагын цогц систем
           <br /> <strong>БҮТЭЭГДЭХҮҮН</strong>
         </h1>
-        <Image className={styles.logo} src={logo} alt="logo" />
       </div>
       <div className={styles.switch}>
         <button
