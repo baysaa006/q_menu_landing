@@ -20,8 +20,16 @@
   flex-direction: row;
   align-items: flex-end;
 }
+.p {
+  font-size: xx-large;
+}
+.order h4 {
+  font-size: x-large;
+}
 .order {
+  justify-self: center;
   list-style: disc;
+  padding-left: 2rem;
 }
 .divider {
   top: 3rem;
@@ -82,12 +90,12 @@
 }
 .qr {
   width: 19vw;
-  top: 40%;
+  top: 20vw;
   right: 10%;
   position: absolute;
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 1050px) {
   .small_con .left {
     align-items: center;
     width: 80%;
@@ -95,6 +103,11 @@
   .small_con {
     align-items: center;
     flex-direction: column;
+  }
+  .qr {
+    width: 35vw;
+    top: 60%;
+    right: 20%;
   }
 }
 @media screen and (max-width: 710px) {
@@ -104,10 +117,12 @@
   .small_con {
     gap: 10px;
   }
+  .p {
+    font-size: large;
+  }
   .qr {
     right: 22%;
     width: 30vw;
-    top: 67%;
   }
   .logo {
     width: 15%;
@@ -125,5 +140,29 @@
   }
   .small_con .right {
     height: max-content;
+  }
+}
+@media screen and (max-width: 520px) {
+  .qr {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .p {
+    font-size: large;
+  }
+  .order h4 {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 400px) {
+  .qr {
+    top: 68%;
+  }
+}
+@media screen and (max-width: 285px) {
+  .qr {
+    width: 17vw;
+    top: 80%;
   }
 }

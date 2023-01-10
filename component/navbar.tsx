@@ -44,11 +44,6 @@ export default function Navbar() {
               <h4>Холбоо барих</h4>
             </a>
           </li>
-          <li>
-            <a href="/#fag" className={styles.drop_down_item}>
-              <h4>Асуулт хариулт</h4>
-            </a>
-          </li>
         </ul>
       </div>
       <div className={styles.buttons}>

@@ -14,8 +14,9 @@ function WebFeature() {
       <div className={styles.header}>
         <h1 className={styles.headText}>
           {" "}
+          <strong>БҮТЭЭГДЭХҮҮН</strong>
+          <br />
           Ресторан удирдлагын цогц систем
-          <br /> <strong>БҮТЭЭГДЭХҮҮН</strong>
         </h1>
       </div>
       <div className={styles.switch}>

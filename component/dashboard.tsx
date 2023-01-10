@@ -14,14 +14,14 @@ export default function Dashboard() {
           {" "}
           <strong>ОНЦЛОХ БҮТЭЭГДЭХҮҮН</strong>
           <br />
-          KARAOKE НОМ
+          Караоке ном
         </h1>{" "}
         <Image className={styles.logo} src={logo} alt="logo" />
       </div>
       <div className={styles.small_con}>
         <div className={styles.left}>
           <div>
-            <p>
+            <p className={styles.p}>
               Уг шийдэл нь <strong>Караоке бизнес эрхлэгч</strong> нарт
               зориулсан бөгөөд өдөр тутамд тулгардаг жижиг мэт боловч төвөгтэй
               олон асуудлыг шийдэхэд туслана.{" "}

@@ -24,25 +24,6 @@ export default function Footer() {
         </div>
         <div className={styles.row}>
           {" "}
-          <h2 className={styles.p}>Бүтээгдэхүүн</h2>
-          <a href="#feature_1">
-            <h2 className={styles.p}>Ухаалаг QR цэс</h2>
-          </a>
-          <a href="#feature_2">
-            <h2 className={styles.p}>Кассын систем</h2>
-          </a>
-          <a href="#pricing">
-            {" "}
-            <h2 className={styles.p}>Үнийн санал</h2>
-          </a>
-          <a href="#partners">
-            {" "}
-            <h2 className={styles.p}>Харилцагчид</h2>
-          </a>
-        </div>
-
-        <div className={styles.row}>
-          {" "}
           <h2 className={styles.p}>Бидэнтэй холбогдох</h2>
           <a className={styles.connect} href="tel:+(976)77772040">
             <Image className={styles.direct} src={phone} alt="" />

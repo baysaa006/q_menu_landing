@@ -75,9 +75,8 @@ export default function Contact() {
               data-error-message="Нэрээ оруулана уу!"
             />
           </div>
-          <input
+          <textarea
             className={styles.input}
-            type="text"
             value={email.message}
             onChange={(e) => {
               setEmail({ ...email, message: e.target.value });

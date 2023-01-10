@@ -131,4 +131,7 @@
     gap: 1rem;
     flex-direction: column;
   }
+  .divider {
+    top: 10%;
+  }
 }
