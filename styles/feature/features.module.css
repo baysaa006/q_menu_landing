@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-position: 97%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -17,10 +17,10 @@
   width: 100%;
 }
 .divider {
-  top: 3rem;
+  top: 0.6rem;
   left: 2rem;
   position: absolute;
-  height: 86%;
+  height: 95%;
   width: 5px;
   background-color: var(--color);
 }

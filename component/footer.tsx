@@ -49,23 +49,6 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.side}>
-        <ul className={styles.social}>
-          <li>
-            <a
-              aria-label="Read more about QmenuDigitalMenu "
-              href="https://www.facebook.com/QmenuDigitalMenu"
-              target="_blank"
-            >
-              <Image className={styles.social_logo} src={face} alt="" />
-            </a>
-          </li>
-          <li>
-            <Image className={styles.social_logo} src={insta} alt="" />
-          </li>
-          <li>
-            <Image className={styles.social_logo} src={link} alt="" />
-          </li>
-        </ul>
         <h2>© 2023 Qmenu, LLC.</h2>
       </div>
     </div>

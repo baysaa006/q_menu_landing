@@ -126,13 +126,7 @@
   display: flex;
   overflow: hidden;
 }
-.divider {
-  left: 48%;
-  position: absolute;
-  background-color: var(--color);
-  height: 75%;
-  width: 2px;
-}
+
 .smallChoices {
   position: relative;
   justify-content: center;

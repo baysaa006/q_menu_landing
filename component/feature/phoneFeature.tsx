@@ -73,19 +73,17 @@ function PhoneFeature() {
     },
   ];
   function handleOpenClose(item: any) {
-    if (active.includes(item)) {
-      setActive(active.filter((i: any) => i !== item));
-    } else {
-      setActive([...active, item]);
-    }
+    setActive(active.includes(item) ? [item] : [item]);
   }
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.headText}>
           {" "}
+          <strong>БҮТЭЭГДЭХҮҮН</strong>
+          <br />
           Ресторан удирдлагын цогц систем
-          <br /> <strong>БҮТЭЭГДЭХҮҮН</strong>
         </h1>{" "}
       </div>
       <ul className={styles.smallCon}>
@@ -125,10 +123,10 @@ function PhoneFeature() {
                 <div className={styles.buttons}>
                   {" "}
                   <button className={styles.demo}>
-                    <h4>Туршилтын хувилбар</h4>
+                    <h4>Туршиж үзэх</h4>
                   </button>
                   <button className={styles.more}>
-                    <h4>Холбогдох...</h4>
+                    <h4>Дэлгэрэнгүй</h4>
                   </button>
                 </div>
               </div>

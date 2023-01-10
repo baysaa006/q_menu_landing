@@ -250,23 +250,23 @@ export default function Pricing() {
 
           <div className={styles.featurePrice}>
             <h4 className={styles.prices}>Гал тогоо удирдлага (KDS) </h4>
-            {feature === 1 ? <h4> 20,000 төгрөг</h4> : <h4> 200,000 төгрөг</h4>}
+            {feature === 1 ? <h4> 20,000 төг</h4> : <h4> 200,000 төг</h4>}
           </div>
           <div className={styles.featurePrice}>
             <h4 className={styles.prices}>Ухаалаг тайлан </h4>
-            {feature === 1 ? <h4> 20,000 төгрөг</h4> : <h4> 200,000 төгрөг</h4>}
+            {feature === 1 ? <h4> 20,000 төг</h4> : <h4> 200,000 төг</h4>}
           </div>
           <div className={styles.featurePrice}>
             <h4 className={styles.prices}>Gift card, Vaucher, Coupon </h4>
-            {feature === 1 ? <h4> 20,000 төгрөг</h4> : <h4> 200,000 төгрөг</h4>}
+            {feature === 1 ? <h4> 20,000 төг</h4> : <h4> 200,000 төг</h4>}
           </div>
           <div className={styles.featurePrice}>
             <h4 className={styles.prices}>Бараа материалын удирдлага </h4>
-            {feature === 1 ? <h4> 40,000 төгрөг</h4> : <h4> 500,000 төгрөг</h4>}
+            {feature === 1 ? <h4> 40,000 төг</h4> : <h4> 500,000 төг</h4>}
           </div>
           <div className={styles.featurePrice}>
             <h4 className={styles.prices}>Санхүүгийн удирдлага </h4>
-            {feature === 1 ? <h4> 40,000 төгрөг</h4> : <h4> 500,000 төгрөг</h4>}
+            {feature === 1 ? <h4> 40,000 төг</h4> : <h4> 500,000 төг</h4>}
           </div>
         </div>
       </div>

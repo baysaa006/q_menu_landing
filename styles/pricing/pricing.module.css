@@ -14,10 +14,10 @@
   text-align: left;
 }
 .divider {
-  top: 3rem;
+  top: 3.8rem;
   left: 2rem;
   position: absolute;
-  height: 86%;
+  height: 92%;
   width: 5px;
   background-color: var(--color);
 }
@@ -115,7 +115,14 @@
 }
 @media screen and (max-width: 565px) {
   .main {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .head {
+    padding: 0.7rem;
   }
   .circle {
     width: 35px;
@@ -123,7 +130,7 @@
   }
   .featureText {
     padding: 1rem;
-    width: 80%;
+    width: 91%;
   }
   .moreFeatureHead {
     justify-content: center;
@@ -132,6 +139,7 @@
     flex-direction: column;
   }
   .divider {
+    display: none;
     top: 10%;
   }
 }

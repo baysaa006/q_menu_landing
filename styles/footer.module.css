@@ -1,6 +1,6 @@
 .container {
   background-color: #000;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,15 +100,13 @@
   .row:nth-child(1) {
     display: none;
   }
-  .container {
-    height: 50vh;
-  }
+
   .ps {
     display: none;
   }
 }
 @media screen and (max-width: 376px) {
   .container {
-    height: 62vh;
+    height: 55vh;
   }
 }

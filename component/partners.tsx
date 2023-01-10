@@ -12,35 +12,120 @@ import partner5 from "../public/img/partner5.svg";
 
 import partner6 from "../public/img/partner6.svg";
 
-import partner7 from "../public/img/partner7.svg";
-
 export default function Partners() {
   return (
-    <div className={styles.container}>
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner1} alt="partner" />
+    <div className={styles.slider}>
+      <div className={styles.slide_track}>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner1}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner2}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner3}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner4}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner5}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner6}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner1}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner2}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner3}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner4}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner5}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div className={styles.slide}>
+          <Image
+            className={styles.img}
+            src={partner6}
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
       </div>
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner2} alt="partner" />
-      </div>{" "}
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner3} alt="partner" />
-      </div>{" "}
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner4} alt="partner" />
-      </div>{" "}
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner5} alt="partner" />
-      </div>{" "}
-      <div className={styles.partner}>
-        {" "}
-        <Image className={styles.partnerImg} src={partner6} alt="partner" />
-      </div>{" "}
     </div>
   );
 }

@@ -77,7 +77,28 @@
 }
 .demo {
   border-radius: 2rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: var(--button_color);
   width: max-content;
+}
+.more {
+  border: 1px solid var(--color);
+  border-radius: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    width: 78%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .headText {
+    text-align: left;
+  }
 }

@@ -38,18 +38,7 @@ function HighlightText(props: { text: any; highlight: any[] }) {
     </>
   );
 }
-const cardVariants: Variants = {
-  offscreen: {
-    y: 300,
-  },
-  onscreen: {
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
+
 export default function Hero() {
   const [active, setActive] = useState<any>([-1]);
   const col = [
@@ -322,31 +311,25 @@ export default function Hero() {
                         </svg>
                       )}
 
-                      <motion.div animate={{ opacity: 1 }} className="card">
-                        <p className={styles.text}>
-                          <HighlightText
-                            text={item.description_1}
-                            highlight={item.highlight}
-                          />
-                        </p>
-                      </motion.div>
+                      <p className={styles.text}>
+                        <HighlightText
+                          text={item.description_1}
+                          highlight={item.highlight}
+                        />
+                      </p>
 
-                      <motion.div className="card" variants={cardVariants}>
-                        <p className={styles.text}>
-                          <HighlightText
-                            text={item.description_2}
-                            highlight={item.highlight}
-                          />
-                        </p>
-                      </motion.div>
-                      <motion.div className="card" variants={cardVariants}>
-                        <p className={styles.text}>
-                          <HighlightText
-                            text={item.description_3}
-                            highlight={item.highlight}
-                          />
-                        </p>
-                      </motion.div>
+                      <p className={styles.text}>
+                        <HighlightText
+                          text={item.description_2}
+                          highlight={item.highlight}
+                        />
+                      </p>
+                      <p className={styles.text}>
+                        <HighlightText
+                          text={item.description_3}
+                          highlight={item.highlight}
+                        />
+                      </p>
                       {active.includes(index) && (
                         <>
                           {" "}

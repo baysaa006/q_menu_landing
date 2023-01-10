@@ -43,7 +43,7 @@ export default function Pricing_card(props: data) {
       <div className={styles.price}>
         {" "}
         <p className={styles.priceText}>{price} </p>
-        <p className={styles.tugrug}>төгрөг</p>
+        <p className={styles.tugrug}>төг</p>
       </div>
       <div className={styles.description}>
         <h4>{description}</h4>
@@ -71,18 +71,20 @@ export default function Pricing_card(props: data) {
           <h4>{benefit5}</h4>
         </div>
       </div>
-      <button
-        onClick={() => router.push(`/pricing_page`)}
-        className={styles.button1}
-      >
-        <h4>Туршиж үзэх</h4>
-      </button>
-      <button
-        onClick={() => router.push(`/pricing_page`)}
-        className={styles.button}
-      >
-        <h4>Дэлгэрэнгүй</h4>
-      </button>
+      <div>
+        <button
+          onClick={() => router.push(`/pricing_page`)}
+          className={styles.button1}
+        >
+          <h4>Туршиж үзэх</h4>
+        </button>
+        <button
+          onClick={() => router.push(`/pricing_page`)}
+          className={styles.button}
+        >
+          <h4>Дэлгэрэнгүй</h4>
+        </button>
+      </div>
     </div>
   );
 }

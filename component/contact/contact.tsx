@@ -87,8 +87,8 @@ export default function Contact() {
             data-error-message="Та мэссэжээ оруулана уу!"
           />
           {sent && <Contact_sent />}
-          <button disabled onClick={send} className={styles.button}>
-            Илгээх
+          <button onClick={send} className={styles.button}>
+            <h4> Илгээх</h4>
           </button>
         </form>
       </div>

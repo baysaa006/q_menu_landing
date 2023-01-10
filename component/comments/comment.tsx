@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Comment() {
   const data: any = [
     {
-      img: comment1,
+      img: comment3,
       speech:
         "Орчин үеийн технологийн давуу талыг мэдрүүлж илуу хурдан шуурхай үйлчилгээг хэрэглэгчдэдээ хүргэж чадсан.",
       title: "Шангрила-FoodStudio захирал",
@@ -25,7 +25,7 @@ export default function Comment() {
       name: "П.Мөнхсайхан",
     },
     {
-      img: comment3,
+      img: comment1,
       speech:
         "Q Menu кассын системийг суурилуулсан өдрөөсөө л манай кассын ачааллыг 50 хувь бууруулж чадсан.",
       title: "УИД - New York Empire захирал",
@@ -61,6 +61,7 @@ export default function Comment() {
                           alt="pro"
                         />
                       </div>
+                      <div className={styles.divider}></div>
                       <div className={styles.left}>
                         <div>
                           <h1 className={styles.speech}>"{item.speech}"</h1>
