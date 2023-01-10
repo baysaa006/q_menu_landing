@@ -50,15 +50,13 @@ export default function Home() {
           name="description"
           content="Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс юм."
         ></meta>
-      </Head>
+      </Head>{" "}
+      <Slider imageList={images} />
       <Section>
-        {" "}
-        <Slider imageList={images} />
+        <div id="solution" className={styles.hero}>
+          <Hero />
+        </div>
       </Section>
-
-      <div id="solution" className={styles.hero}>
-        <Hero />
-      </div>
       <Section>
         {" "}
         <div id="features" className={styles.features}>
@@ -81,7 +79,6 @@ export default function Home() {
           <Pricing />
         </div>
       </Section>
-
       <Section>
         <div id="comment" className={styles.commment}>
           <Comment />
