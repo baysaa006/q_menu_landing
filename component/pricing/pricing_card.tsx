@@ -35,7 +35,9 @@ export default function Pricing_card(props: data) {
     <div className={styles.container}>
       <div className={styles.nameDiv}>
         {" "}
-        <h3 className={styles.name}>{name}</h3>
+        <h3 className={styles.name}>
+          <strong>{name}</strong>
+        </h3>
         {recPic && <Image className={styles.rec} src={rec} alt="rec" />}
       </div>
       <div className={styles.price}>

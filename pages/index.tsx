@@ -11,13 +11,34 @@ import Partners from "../component/partners";
 import Comment from "../component/comments/comment";
 import Contact from "../component/contact/contact";
 import Head from "next/head";
-import Fag from "../component/fag";
-import useWindowDimensions from "../component/pricing/use_width";
-import WebFeature from "../component/feature/webFeature";
-import PhoneFeature from "../component/feature/phoneFeature";
+import { motion, Variants } from "framer-motion";
+
 import Features from "../component/feature/features";
+import { animate, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 export default function Home() {
   const images = [main1, main2, main3];
+
+  function Section(props: { children: any }) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
+    return (
+      <section ref={ref}>
+        <div
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          {props.children}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <>
       <Head>
@@ -30,32 +51,48 @@ export default function Home() {
           content="Ухаалаг QR цэс нь хэрэглэгчдэд гар утаснаасаа цэс рүү нэвтрэх боломжийг олгодог Quick Response (QR) кодыг ашигладаг дижитал цэс юм."
         ></meta>
       </Head>
-
-      <div className={styles.slider}>
+      <Section>
+        {" "}
         <Slider imageList={images} />
-      </div>
+      </Section>
+
       <div id="solution" className={styles.hero}>
         <Hero />
       </div>
-      <div id="features" className={styles.features}>
-        <Features />
-      </div>
-      <div id="" className={styles.dash}>
-        <Dashboard />
-      </div>
-      <div>
-        <Partners />
-      </div>
-      <div id="pricing" className={styles.pricing}>
-        <Pricing />
-      </div>
+      <Section>
+        {" "}
+        <div id="features" className={styles.features}>
+          <Features />
+        </div>
+      </Section>
+      <Section>
+        <div id="" className={styles.dash}>
+          <Dashboard />
+        </div>
+      </Section>
+      <Section>
+        <div>
+          <Partners />
+        </div>
+      </Section>
+      <Section>
+        {" "}
+        <div id="pricing" className={styles.pricing}>
+          <Pricing />
+        </div>
+      </Section>
 
-      <div id="comment" className={styles.commment}>
-        <Comment />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <Section>
+        <div id="comment" className={styles.commment}>
+          <Comment />
+        </div>
+      </Section>
+      <Section>
+        {" "}
+        <div id="contact">
+          <Contact />
+        </div>
+      </Section>
     </>
   );
 }

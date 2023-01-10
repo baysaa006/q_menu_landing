@@ -15,12 +15,10 @@ import icon10 from "../public/img/image10.svg";
 import icon11 from "../public/img/image11.svg";
 import icon12 from "../public/img/image12.svg";
 import gift from "../public/img/gift.svg";
-
+import { motion, Variants } from "framer-motion";
 import Banner from "../public/img/Banner.svg";
 import router from "next/router";
-import Draggable from "react-draggable";
 import useWindowDimensions from "./pricing/use_width";
-import Hand from "./animations/hand";
 
 function HighlightText(props: { text: any; highlight: any[] }) {
   const { text, highlight } = props;
@@ -40,6 +38,18 @@ function HighlightText(props: { text: any; highlight: any[] }) {
     </>
   );
 }
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 export default function Hero() {
   const [active, setActive] = useState<any>([-1]);
   const col = [
@@ -312,24 +322,31 @@ export default function Hero() {
                         </svg>
                       )}
 
-                      <p className={styles.text}>
-                        <HighlightText
-                          text={item.description_1}
-                          highlight={item.highlight}
-                        />
-                      </p>
-                      <p className={styles.text}>
-                        <HighlightText
-                          text={item.description_2}
-                          highlight={item.highlight}
-                        />
-                      </p>
-                      <p className={styles.text}>
-                        <HighlightText
-                          text={item.description_3}
-                          highlight={item.highlight}
-                        />
-                      </p>
+                      <motion.div animate={{ opacity: 1 }} className="card">
+                        <p className={styles.text}>
+                          <HighlightText
+                            text={item.description_1}
+                            highlight={item.highlight}
+                          />
+                        </p>
+                      </motion.div>
+
+                      <motion.div className="card" variants={cardVariants}>
+                        <p className={styles.text}>
+                          <HighlightText
+                            text={item.description_2}
+                            highlight={item.highlight}
+                          />
+                        </p>
+                      </motion.div>
+                      <motion.div className="card" variants={cardVariants}>
+                        <p className={styles.text}>
+                          <HighlightText
+                            text={item.description_3}
+                            highlight={item.highlight}
+                          />
+                        </p>
+                      </motion.div>
                       {active.includes(index) && (
                         <>
                           {" "}

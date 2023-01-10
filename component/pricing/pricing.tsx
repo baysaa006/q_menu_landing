@@ -11,11 +11,9 @@ export default function Pricing() {
       <div className={styles.divider}></div>
       <div className={styles.head}>
         <h1 className={styles.headText}>
-          ҮНИЙН СОНГОЛТ
+          <strong>ҮНИЙН СОНГОЛТ</strong>
           <br />
-          <strong>
-            Та хүссэн үедээ сонгосон багцаа багасгаж эсвэл ахиулж болно.
-          </strong>
+          Та хүссэн үедээ сонгосон багцаа багасгаж эсвэл ахиулж болно.
         </h1>
       </div>
       <div className={styles.header}>
